@@ -1,2 +1,3 @@
 date,health_score,pages_crawled,ttfb_median,pages_no_h1,imgs_missing_alt,json_ld_missing,gsc_clicks,gsc_impressions,gsc_ctr,gsc_avg_position,pages_indexed,pages_not_indexed,ga4_sessions,ga4_engagement_sec,ga4_key_events,ahrefs_dr,ahrefs_ref_domains,ahrefs_org_keywords,ahrefs_org_traffic,ai_overviews,chatgpt_citations
 2026-07-31,64,365,806,61,1776,10,975,592000,0.20,26.1,288,392,7003,16,0,27,562,62,162,27,0
+2026-08-02,64,365,822,61,1776,10,974,588000,0.20,26.3,288,392,7022,16,0,27,568,61,157,27,0
