@@ -102,8 +102,12 @@ else:
 # cập nhật chip ngày cập nhật
 today = last.get('date') or datetime.date.today().isoformat()
 d = datetime.datetime.strptime(today, '%Y-%m-%d').strftime('%d/%m/%Y')
-src = re.sub(r'<span class="chip blue">Ngày crawl: <b>[^<]*</b></span>',
+src = re.sub(r'<span class="chip blue">(?:Ngày crawl|Cập nhật): <b>[^<]*</b></span>',
              '<span class="chip blue">Cập nhật: <b>' + d + '</b></span>', src, count=1)
+
+# cập nhật ngày trong thẻ <title>
+src = re.sub(r'(<title>[^<]*Ahrefs\) · )\d{2}/\d{2}/\d{4}(</title>)',
+             lambda m: m.group(1) + d + m.group(2), src, count=1)
 
 io.open(IDX, 'w', encoding='utf-8').write(src)
 print('injected history, %d ngay, file %d bytes' % (len(rows), len(src)))
