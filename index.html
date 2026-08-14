@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="vi"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>KVY Technology — Kiểm toán SEO tổng hợp (Crawl + GSC + GA4 + Ahrefs) · 12/08/2026</title>
+<title>KVY Technology — Kiểm toán SEO tổng hợp (Crawl + GSC + GA4 + Ahrefs) · 14/08/2026</title>
 <style>
 :root{
  --bg:#EEF2FA; --bg2:#E4EAF6; --card:#FFFFFF; --ink:#16161D;
@@ -150,17 +150,30 @@ details.datebox .inner .lead{padding-top:14px}
 .aicard.some .n{color:var(--accent)}
 .aicard.warn .n{color:var(--amber)}
 .aitbl td:first-child{white-space:normal}
+
+/* chart */
+.chartbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding-bottom:13px;
+ margin-bottom:13px;border-bottom:1px solid var(--line)}
+.metchips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:15px}
+.metchip{padding:4px 11px;border:1px solid var(--line);background:#fff;border-radius:18px;
+ font-size:11.5px;cursor:pointer;color:#66708A;font-weight:600;font-family:inherit}
+.metchip:hover{border-color:#B7CCFF}
+.metchip.on{background:var(--accent-sf);border-color:#B7CCFF;color:var(--accent-dk)}
+.chlegend{display:flex;flex-wrap:wrap;gap:16px;margin-top:10px;padding-top:12px;border-top:1px solid var(--line)}
+.lgi{display:flex;align-items:center;gap:7px;font-size:12px;color:#39415A;font-weight:600}
+.lgi i{width:14px;height:3px;border-radius:2px;display:inline-block}
+#chartwrap svg{overflow:visible}
 </style></head><body>
 <div class="top"><div class="inner">
  <div>
   <h1>KVY Technology — Kiểm toán SEO tổng hợp</h1>
   <div class="sub">kvytechnology.com · Crawl trực tiếp qua Chrome (fetch same-origin, đo TTFB thật)</div>
-  <div class="srcpill">Nguồn: 11 sitemap con từ sitemap_index.xml (Rank Math) · 368 URL</div>
+  <div class="srcpill">Nguồn: 11 sitemap con từ sitemap_index.xml (Rank Math) · 365 URL</div>
  </div>
  <div class="rmeta">
-  Ngày crawl: <b>12/08/2026</b> · audit hằng ngày<br>
-  Đo trực tiếp: <b>368 trang</b> · Sitemap: <b>368 URL</b><br>
-  GSC &amp; GA4: <b>13/05 – 10/08/2026</b> · Ahrefs: <b>12/08/2026</b>
+  Cập nhật: <b>14/08/2026</b> · audit hằng ngày<br>
+  Đo trực tiếp: <b>364 trang</b> · Sitemap: <b>365 URL</b><br>
+  GSC: <b>16/05 – 12/08/2026</b> · Ahrefs: <b>14/08/2026</b> · GA4: ảnh chụp 12/08
  </div>
 </div></div>
 <div class="wrap">
@@ -169,7 +182,7 @@ details.datebox .inner .lead{padding-top:14px}
  <summary>
   <span class="stitle">Các lần đo đã lưu — bấm để xem lịch sử từng ngày</span>
   <span style="display:flex;align-items:center;gap:14px">
-   <span class="scount">6 mốc · 31/07 → 12/08/2026</span>
+   <span class="scount">8 mốc · 31/07 → 14/08/2026</span>
    <span class="chev"></span>
   </span>
  </summary>
@@ -177,7 +190,9 @@ details.datebox .inner .lead{padding-top:14px}
   <div class="lead">Mỗi lần chạy lưu một bản chụp dữ liệu trong <code style="background:#EEF2FA;padding:1px 5px;border-radius:4px">history/</code>.
   Chip <b>đậm</b> là bản đang xem. Dùng bộ lọc <b>Khoảng thời gian</b> ở khối bên dưới để xem xu hướng trong một giai đoạn bất kỳ.</div>
   <div class="dgrid">
-   <span class="dchip on"><b>12/08/2026</b>Health 71 · index 288→312, click 968→924, GA4 vào lại được</span>
+   <span class="dchip on"><b>14/08/2026</b>Health 71 · sitemap 368→365, DR 26→29, ref domains 633, GA4 vẫn mất quyền</span>
+   <span class="dchip"><b>13/08/2026</b>Health 71 · đứng yên; click 924→928, vị trí 27,9→28,0, GA4 mất quyền</span>
+   <span class="dchip"><b>12/08/2026</b>Health 71 · index 288→312, click 968→924, GA4 vào lại được</span>
    <span class="dchip"><b>05/08/2026</b>Health 64 · TTFB 817ms, alt đếm sai 1.782, mất quyền GA4</span>
    <span class="dchip"><b>04/08/2026</b>Health 65 · ref domains 575, AI Overviews 28</span>
    <span class="dchip"><b>03/08/2026</b>Health 65 · đổi cách đếm ảnh alt xuống 1.046</span>
@@ -204,8 +219,27 @@ details.datebox .inner .lead{padding-top:14px}
   Xanh nghĩa là đi đúng hướng (với các chỉ số như "Trang thiếu H1" hay "Vị trí trung bình" thì giảm mới là tốt).
  </div>
 </div>
+
+<h2 class="sec">Biểu đồ chỉ số theo ngày</h2>
+<div class="card">
+ <div class="chartbar">
+  <span class="rlab">Chế độ</span>
+  <span class="rbtns" id="cmode">
+   <button class="rbtn on" data-m="real">Giá trị thật</button>
+   <button class="rbtn" data-m="norm">So sánh nhiều chỉ số (%)</button>
+  </span>
+  <span class="rsel" id="conewrap">Chỉ số <select id="cone"></select></span>
+ </div>
+ <div class="metchips" id="cmulti"></div>
+ <div id="chartwrap"></div>
+ <div style="font-size:11.5px;color:#66708A;margin-top:12px;line-height:1.7">
+  Biểu đồ dùng đúng khoảng thời gian đang chọn ở khối trên. <b>Giá trị thật</b> vẽ một chỉ số theo đơn vị gốc.
+  <b>So sánh nhiều chỉ số</b> quy tất cả về mốc đầu kỳ = 100 để nhìn tốc độ tăng giảm tương đối giữa các chỉ số có đơn vị khác nhau.
+  Rê chuột vào điểm để xem giá trị từng ngày.
+ </div>
+</div>
 <script>
-var HIST = {"dates": ["2026-07-31", "2026-08-02", "2026-08-03", "2026-08-04", "2026-08-05", "2026-08-12"], "gsc_clicks": [975.0, 974.0, 972.0, 972.0, 968.0, 924.0], "gsc_impressions": [592000.0, 588000.0, 589000.0, 589000.0, 587000.0, 550000.0], "gsc_ctr": [0.2, 0.2, 0.2, 0.2, 0.2, 0.2], "gsc_avg_position": [26.1, 26.3, 26.5, 26.5, 26.6, 27.9], "pages_indexed": [288.0, 288.0, 288.0, 288.0, 288.0, 312.0], "pages_not_indexed": [392.0, 392.0, 392.0, 392.0, 392.0, 398.0], "ga4_sessions": [7003.0, 7022.0, 7022.0, 7010.0, 5970.0, 5868.0], "ga4_key_events": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "ga4_engagement_sec": [16.0, 16.0, 16.0, 16.0, 14.0, 14.0], "pages_no_h1": [61.0, 61.0, 61.0, 61.0, 61.0, 62.0], "imgs_missing_alt": [1776.0, 1776.0, 1046.0, 1047.0, 1782.0, 1046.0], "ttfb_median": [806.0, 822.0, 740.0, 766.0, 817.0, 62.0], "ahrefs_dr": [27.0, 27.0, 27.0, 27.0, 27.0, 26.0], "ahrefs_ref_domains": [562.0, 568.0, 568.0, 575.0, 581.0, 628.0], "ahrefs_org_keywords": [62.0, 61.0, 61.0, 60.0, 61.0, 55.0], "ahrefs_org_traffic": [162.0, 157.0, 157.0, 168.0, 165.0, 191.0], "health_score": [64.0, 64.0, 65.0, 65.0, 64.0, 71.0]};
+var HIST = {"dates": ["2026-07-31", "2026-08-02", "2026-08-03", "2026-08-04", "2026-08-05", "2026-08-12", "2026-08-13", "2026-08-14"], "gsc_clicks": [975.0, 974.0, 972.0, 972.0, 968.0, 924.0, 928.0, 909.0], "gsc_impressions": [592000.0, 588000.0, 589000.0, 589000.0, 587000.0, 550000.0, 547000.0, 536000.0], "gsc_ctr": [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2], "gsc_avg_position": [26.1, 26.3, 26.5, 26.5, 26.6, 27.9, 28.0, 28.4], "pages_indexed": [288.0, 288.0, 288.0, 288.0, 288.0, 312.0, 312.0, 312.0], "pages_not_indexed": [392.0, 392.0, 392.0, 392.0, 392.0, 398.0, 398.0, 398.0], "ga4_sessions": [7003.0, 7022.0, 7022.0, 7010.0, 5970.0, 5868.0, 5868.0, 5868.0], "ga4_key_events": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "ga4_engagement_sec": [16.0, 16.0, 16.0, 16.0, 14.0, 14.0, 14.0, 14.0], "pages_no_h1": [61.0, 61.0, 61.0, 61.0, 61.0, 62.0, 61.0, 59.0], "imgs_missing_alt": [1776.0, 1776.0, 1046.0, 1047.0, 1782.0, 1046.0, 1046.0, 1008.0], "ttfb_median": [806.0, 822.0, 740.0, 766.0, 817.0, 62.0, 112.0, 109.0], "ahrefs_dr": [27.0, 27.0, 27.0, 27.0, 27.0, 26.0, 26.0, 29.0], "ahrefs_ref_domains": [562.0, 568.0, 568.0, 575.0, 581.0, 628.0, 628.0, 633.0], "ahrefs_org_keywords": [62.0, 61.0, 61.0, 60.0, 61.0, 55.0, 55.0, 53.0], "ahrefs_org_traffic": [162.0, 157.0, 157.0, 168.0, 165.0, 191.0, 187.0, 188.0], "health_score": [64.0, 64.0, 65.0, 65.0, 64.0, 71.0, 71.0, 71.0]};
 var HMETA = [["gsc_clicks", "Lượt nhấp GSC", "up"], ["gsc_impressions", "Lượt hiển thị GSC", "up"], ["gsc_ctr", "CTR (%)", "up"], ["gsc_avg_position", "Vị trí trung bình", "down"], ["pages_indexed", "Trang được index", "up"], ["pages_not_indexed", "Trang không index", "down"], ["ga4_sessions", "Phiên GA4", "up"], ["ga4_key_events", "Chuyển đổi GA4", "up"], ["ga4_engagement_sec", "Tương tác (giây)", "up"], ["pages_no_h1", "Trang thiếu H1", "down"], ["imgs_missing_alt", "Ảnh thiếu alt", "down"], ["ttfb_median", "TTFB trung vị (ms)", "down"], ["ahrefs_dr", "Domain Rating", "up"], ["ahrefs_ref_domains", "Referring domains", "up"], ["ahrefs_org_keywords", "Từ khoá tự nhiên", "up"], ["ahrefs_org_traffic", "Traffic Ahrefs/tháng", "up"], ["health_score", "Điểm sức khoẻ", "up"]];
 (function(){
  var w=document.getElementById('trendwrap'); if(!w) return;
@@ -260,6 +294,7 @@ var HMETA = [["gsc_clicks", "Lượt nhấp GSC", "up"], ["gsc_impressions", "L�
   });
   html+='</tbody></table>';
   w.innerHTML=html;
+  if(typeof curA!=='undefined'){ curA=a; curB=b; drawChart(); }
  }
  btns.addEventListener('click',function(e){
   var b=e.target.closest('.rbtn'); if(!b) return;
@@ -273,6 +308,91 @@ var HMETA = [["gsc_clicks", "Lượt nhấp GSC", "up"], ["gsc_impressions", "L�
  }
  fromSel.addEventListener('change',manual); toSel.addEventListener('change',manual);
  btns.querySelector('.rbtn[data-d="0"]').classList.add('on');
+
+ // ---------- chart ----------
+ var PAL=['#0049FD','#12875A','#C57A16','#CE3B3B','#7A4FD6','#0E8FA8'];
+ var cw=document.getElementById('chartwrap');
+ var cone=document.getElementById('cone'), cmulti=document.getElementById('cmulti');
+ var cmode=document.getElementById('cmode'), conewrap=document.getElementById('conewrap');
+ var mode='real', curA=0, curB=N-1;
+ var DEFAULT=['gsc_clicks','pages_indexed','ahrefs_ref_domains','health_score'];
+ var picked={}; DEFAULT.forEach(function(k){picked[k]=1;});
+ HMETA.forEach(function(m,i){
+  cone.insertAdjacentHTML('beforeend','<option value="'+m[0]+'"'+(m[0]==='gsc_clicks'?' selected':'')+'>'+m[1]+'</option>');
+  cmulti.insertAdjacentHTML('beforeend','<button class="metchip'+(picked[m[0]]?' on':'')+'" data-k="'+m[0]+'">'+m[1]+'</button>');
+ });
+ function fmt(x){ return (Math.round(x*100)/100).toLocaleString('vi-VN'); }
+ function drawChart(){
+  var a=curA,b=curB, n=b-a+1;
+  var W=940,H=320,L=64,R=22,T=18,B=46;
+  var iw=W-L-R, ih=H-T-B;
+  var series=[];
+  if(mode==='real'){
+   var k=cone.value, m=HMETA.filter(function(x){return x[0]===k;})[0];
+   series=[{k:k,name:m[1],col:PAL[0],v:(HIST[k]||[]).slice(a,b+1)}];
+  }else{
+   var ci=0;
+   HMETA.forEach(function(m){
+    if(!picked[m[0]]) return;
+    var raw=(HIST[m[0]]||[]).slice(a,b+1), base=raw[0];
+    var v=raw.map(function(x){ return base? x/base*100 : 100; });
+    series.push({k:m[0],name:m[1],col:PAL[ci++%PAL.length],v:v,raw:raw});
+   });
+  }
+  if(!series.length||!series[0].v.length){ cw.innerHTML='<div style="padding:26px;color:#66708A;font-size:12.5px">Chọn ít nhất một chỉ số.</div>'; return; }
+  var all=[]; series.forEach(function(s2){ s2.v.forEach(function(x){ all.push(x); }); });
+  var mx=Math.max.apply(null,all), mn=Math.min.apply(null,all);
+  if(mode==='norm'){ mx=Math.max(mx,105); mn=Math.min(mn,95); }
+  var pad=(mx-mn)*0.12 || (Math.abs(mx)*0.1||1);
+  mx+=pad; mn-=pad; if(mn<0&&Math.min.apply(null,all)>=0) mn=0;
+  var span=(mx-mn)||1;
+  function X(i){ return n===1? L+iw/2 : L+i/(n-1)*iw; }
+  function Y(x){ return T+ih-((x-mn)/span)*ih; }
+  var g='';
+  for(var t=0;t<=4;t++){
+   var val=mn+span*t/4, y=Y(val);
+   g+='<line x1="'+L+'" y1="'+y+'" x2="'+(W-R)+'" y2="'+y+'" stroke="#E4EAF6" stroke-width="1"/>';
+   g+='<text x="'+(L-9)+'" y="'+(y+4)+'" text-anchor="end" font-size="10.5" fill="#8A93AB">'+fmt(val)+'</text>';
+  }
+  var step=Math.ceil(n/9);
+  for(var i=0;i<n;i++){
+   if(i%step!==0 && i!==n-1) continue;
+   var dd=D[a+i].split('-');
+   g+='<text x="'+X(i)+'" y="'+(H-B+20)+'" text-anchor="middle" font-size="10.5" fill="#8A93AB">'+dd[2]+'/'+dd[1]+'</text>';
+  }
+  series.forEach(function(s2,si){
+   var pts=s2.v.map(function(x,i){ return X(i)+','+Y(x); }).join(' ');
+   if(series.length===1){
+    g+='<polygon fill="'+s2.col+'" fill-opacity=".08" points="'+L+','+(T+ih)+' '+pts+' '+X(n-1)+','+(T+ih)+'"/>';
+   }
+   g+='<polyline fill="none" stroke="'+s2.col+'" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" points="'+pts+'"/>';
+   s2.v.forEach(function(x,i){
+    var lbl=mode==='norm'? fmt(s2.raw[i])+' ('+fmt(x)+'%)' : fmt(x);
+    g+='<circle cx="'+X(i)+'" cy="'+Y(x)+'" r="4" fill="#fff" stroke="'+s2.col+'" stroke-width="2.2">'+
+       '<title>'+s2.name+' · '+D[a+i]+': '+lbl+'</title></circle>';
+   });
+  });
+  var leg=series.map(function(s2){
+   return '<span class="lgi"><i style="background:'+s2.col+'"></i>'+s2.name+'</span>';
+  }).join('');
+  cw.innerHTML='<svg viewBox="0 0 '+W+' '+H+'" style="width:100%;height:auto;display:block">'+g+'</svg>'+
+    '<div class="chlegend">'+leg+'</div>';
+ }
+ cmode.addEventListener('click',function(e){
+  var b2=e.target.closest('.rbtn'); if(!b2) return;
+  [].forEach.call(cmode.querySelectorAll('.rbtn'),function(x){x.classList.remove('on');});
+  b2.classList.add('on'); mode=b2.dataset.m;
+  conewrap.style.display = mode==='real'?'':'none';
+  cmulti.style.display = mode==='norm'?'':'none';
+  drawChart();
+ });
+ cone.addEventListener('change',drawChart);
+ cmulti.addEventListener('click',function(e){
+  var b2=e.target.closest('.metchip'); if(!b2) return;
+  var k=b2.dataset.k; picked[k]=picked[k]?0:1;
+  b2.classList.toggle('on'); drawChart();
+ });
+ cmulti.style.display='none';
  render(0, N-1);
 })();
 </script>
@@ -283,32 +403,32 @@ var HMETA = [["gsc_clicks", "Lượt nhấp GSC", "up"], ["gsc_impressions", "L�
  <div class="card kpi">
   <div class="lbl">Điểm sức khỏe</div>
   <div class="val">71<small>/100</small></div>
-  <span class="tag t-warn">Đang cải thiện</span>
-  <div class="note"><b>Không nên đọc 64 → 71 là site tốt lên.</b> Khoảng 6 trong 7 điểm tăng đến từ TTFB (817ms → 62ms) — một chỉ số phụ thuộc trạng thái cache CDN lúc đo, không phải năng lực server. Cải thiện thật duy nhất: index tăng 288 → 312. Trong khi đó click giảm 968 → 924 và vị trí trung bình tụt 26,6 → 27,9.</div>
+  <span class="tag t-warn">Đứng yên</span>
+  <div class="note"><b>Giữ nguyên 71 điểm, ngày thứ ba liên tiếp.</b> Index vẫn 312/398, TTFB vẫn dưới ngưỡng rất nhanh. Cải thiện nhẹ ở nội dung (thiếu H1 61 → 59 trang, ảnh thiếu alt 1.046 → 1.008) bù đúng phần trừ ở on-page (click 928 → 909, vị trí 28,0 → 28,4) và AEO (AI Overviews 25 → 23). <b>Sitemap co từ 368 xuống 365 URL</b> — 3 URL đã bị gỡ khỏi sitemap. <b>GA4 vẫn không làm mới được</b>: Google yêu cầu đăng nhập lại tài khoản thứ hai, nên số phiên/tương tác vẫn là ảnh chụp 12/08.</div>
  </div>
  <div class="card kpi">
   <div class="lbl">Trang đã crawl</div>
-  <div class="val">368</div>
-  <span class="tag t-warn">367/368 trả về 200</span>
-  <div class="note">287 blog &amp; taxonomy · 68 trang dịch vụ/tĩnh · 4 usecase · 6 testimonial · 4 showcase · 1 trang chủ. 367/368 trả về 200. <code>/blog/software/software-development-process-2/</code> <b>không tải được ở tầng kết nối</b> — thử 3 lần đều lỗi, mở trực tiếp bằng trình duyệt cũng ra trang lỗi. GSC vẫn ghi nhận 167 lượt hiển thị cho URL này.</div>
+  <div class="val">365</div>
+  <span class="tag t-warn">364/365 trả về 200</span>
+  <div class="note">285 blog &amp; taxonomy · 65 trang dịch vụ/tĩnh · 4 usecase · 6 testimonial · 4 showcase · 1 trang chủ. Sitemap giảm 368 → 365 URL. 364/365 trả về 200. <code>/blog/software/software-development-process-2/</code> <b>không tải được ở tầng kết nối</b> — thử 3 lần đều lỗi, mở trực tiếp bằng trình duyệt cũng ra trang lỗi. GSC vẫn ghi nhận 142 lượt hiển thị cho URL này.</div>
  </div>
  <div class="card kpi">
   <div class="lbl">TTFB trung vị</div>
-  <div class="val">62<small>ms</small></div>
+  <div class="val">109<small>ms</small></div>
   <span class="tag t-ok">Rất nhanh</span>
-  <div class="note">Đo riêng một lượt với <code>cache:no-store</code>, huỷ body ngay khi có header. <b>367/368 trang dưới 1s</b>, chậm nhất 106ms. Trung vị giảm 13 lần so với 05/08 (817ms → 62ms). <code>cache:no-store</code> chỉ bỏ qua cache trình duyệt chứ không bỏ qua cache CDN, nên con số này phản ánh <b>trạng thái cache lúc đo</b>. Cần đo cùng khung giờ mỗi ngày trước khi coi đây là cải thiện thật.</div>
+  <div class="note">Đo riêng một lượt với <code>cache:no-store</code>, huỷ body ngay khi có header. <b>364/364 trang đo được đều dưới 1s</b>, chậm nhất 169ms. Trung vị 109ms hôm nay so với 112ms ngày 13/08 — dao động trong vùng rất nhanh, không phải suy giảm thật. <code>cache:no-store</code> chỉ bỏ qua cache trình duyệt chứ không bỏ qua cache CDN, nên con số này phản ánh <b>trạng thái cache lúc đo</b>. Cần đo cùng khung giờ mỗi ngày trước khi coi đây là cải thiện thật.</div>
  </div>
  <div class="card kpi">
   <div class="lbl">Schema JSON-LD</div>
-  <div class="val">357<small>/368</small></div>
-  <span class="tag t-ok">97,0% phủ schema</span>
-  <div class="note">Organization + WebSite + Place nhất quán toàn site. 36 trang có FAQPage, không đổi so với 05/08. Còn 11 trang trắng schema — chủ yếu là showcase, testimonial và trang lỗi chuyển hướng.</div>
+  <div class="val">355<small>/365</small></div>
+  <span class="tag t-ok">97,3% phủ schema</span>
+  <div class="note">Organization + WebSite + Place nhất quán toàn site. 36 trang có FAQPage, không đổi. Còn 10 trang trắng schema — chủ yếu là showcase, testimonial và trang lỗi chuyển hướng.</div>
  </div>
  <div class="card kpi">
   <div class="lbl">Ảnh thiếu alt</div>
-  <div class="val">1.046<small>/2.940</small></div>
-  <span class="tag t-warn">35,6% ảnh nội dung</span>
-  <div class="note">Tổng số ảnh trong vùng nội dung giảm từ 3.679 xuống 2.940 do template đổi, nên số ảnh thiếu alt giảm theo. <b>Không có bằng chứng nào cho thấy alt đã được bổ sung</b> — tỷ lệ vẫn hơn một phần ba.</div>
+  <div class="val">1.008<small>/2.917</small></div>
+  <span class="tag t-warn">34,6% ảnh nội dung</span>
+  <div class="note">Giảm nhẹ so với 1.046/2.940 ngày 13/08, chủ yếu do 3 URL rời sitemap chứ không phải do bổ sung alt. Tỷ lệ vẫn hơn một phần ba — đây là hạng mục dễ sửa hàng loạt nhất trong toàn bộ bản audit.</div>
  </div>
 </div>
 
@@ -319,32 +439,32 @@ var HMETA = [["gsc_clicks", "Lượt nhấp GSC", "up"], ["gsc_impressions", "L�
   <div id="subs"></div>
   <div style="font-size:11.5px;color:#6B7280;margin-top:15px;line-height:1.7">
    Trọng số: Crawlability 25% · Hiệu năng 25% · Schema/AEO 20% · On-page 15% · Nội dung 15% → tổng <b>71/100</b>.
-   Hiệu năng nhảy từ 71 lên 98 nhờ TTFB trung vị 62ms. Crawlability nhích lên 62 vì Google đã index thêm 24 trang (288 → <b>312</b>),
-   nhưng số trang không được index cũng tăng lên <b>398</b>. On-page tụt còn 45: CTR toàn site vẫn 0,2% và vị trí trung bình trượt tiếp từ 26,6 xuống 27,9.
+   Crawlability giữ 62 (index 312/398 không đổi). Hiệu năng giữ 95 với TTFB trung vị 109ms. Schema/AEO lùi 69 → <b>68</b> vì AI Overviews giảm tiếp 25 → 23.
+   On-page tụt 44 → <b>43</b>: CTR toàn site vẫn 0,2% và vị trí trung bình trượt từ 28,0 xuống 28,4. Nội dung nhích 74 → <b>75</b> nhờ số trang thiếu H1 giảm 61 → 59.
   </div>
  </div>
  <div class="card">
-  <div style="font-size:13px;font-weight:700;margin-bottom:14px">Phân bố TTFB (368 trang đo thật)</div>
+  <div style="font-size:13px;font-weight:700;margin-bottom:14px">Phân bố TTFB (365 trang đo thật)</div>
   <div class="legend" id="speed"></div>
   <div style="font-size:11.5px;color:#6B7280;line-height:1.7">
-   Toàn bộ 368 trang dưới 1s, không còn trang nào trong nhóm 1–3s. HTML trung bình giảm từ 307 KB xuống <b>243 KB/trang</b>.
+   Toàn bộ 364 trang đo được đều dưới 1s, không có trang nào trong nhóm 1–3s. HTML trung bình <b>247 KB/trang</b>.
    Hạ tầng không còn là điểm nghẽn — phần còn lại của bản audit đều là vấn đề nội dung và chuyển đổi.
   </div>
  </div>
 </div>
 
 
-<h2 class="sec">Hiệu quả thật — Google Search Console (13/05 – 10/08/2026)</h2>
+<h2 class="sec">Hiệu quả thật — Google Search Console (16/05 – 12/08/2026)</h2>
 <div class="kpis">
  <div class="card kpi">
-  <div class="lbl">Tổng lượt nhấp</div><div class="val">924</div>
-  <span class="tag t-bad">~308 click/tháng</span>
-  <div class="note">Trên toàn bộ site trong 3 tháng. Đây là toàn bộ traffic tự nhiên mà 368 trang và 287 bài blog mang về. Giảm nhẹ và đều suốt hai tuần: 975 → 968 → 924 (−5% so với 05/08).</div>
+  <div class="lbl">Tổng lượt nhấp</div><div class="val">909</div>
+  <span class="tag t-bad">~303 click/tháng</span>
+  <div class="note">Trên toàn bộ site trong 3 tháng. Đây là toàn bộ traffic tự nhiên mà 365 trang và 285 bài blog mang về. Quay lại chiều giảm: 975 → 968 → 924 → 928 → <b>909</b> (−19 so với 13/08, −2,0%).</div>
  </div>
  <div class="card kpi">
-  <div class="lbl">Tổng lượt hiển thị</div><div class="val">550<small>N</small></div>
+  <div class="lbl">Tổng lượt hiển thị</div><div class="val">536<small>N</small></div>
   <span class="tag t-info">Hiển thị rất tốt</span>
-  <div class="note">550.000 lượt hiển thị, giảm 37.000 so với 05/08. Vấn đề không nằm ở việc Google không thấy KVY — Google thấy rất nhiều.</div>
+  <div class="note">536.000 lượt hiển thị, giảm 11.000 so với 13/08 khi cửa sổ 3 tháng trượt tới. Vấn đề không nằm ở việc Google không thấy KVY — Google thấy rất nhiều.</div>
  </div>
  <div class="card kpi">
   <div class="lbl">CTR trung bình</div><div class="val">0,2<small>%</small></div>
@@ -352,25 +472,25 @@ var HMETA = [["gsc_clicks", "Lượt nhấp GSC", "up"], ["gsc_impressions", "L�
   <div class="note">Cứ 500 lần xuất hiện trên Google mới có 1 người bấm vào. Đây là chỉ số tệ nhất của toàn bộ bản audit.</div>
  </div>
  <div class="card kpi">
-  <div class="lbl">Vị trí trung bình</div><div class="val">27,9</div>
+  <div class="lbl">Vị trí trung bình</div><div class="val">28,4</div>
   <span class="tag t-bad">Trang 3 kết quả</span>
-  <div class="note">Phần lớn hiển thị đến từ vị trí 11–30, nơi CTR gần bằng 0. 771 URL có hiển thị, phần lớn <b>0 click</b>. Vị trí trung bình trượt liên tục: 26,1 → 26,6 → <b>27,9</b>.</div>
+  <div class="note">Phần lớn hiển thị đến từ vị trí 11–30, nơi CTR gần bằng 0. 770 URL có hiển thị, phần lớn <b>0 click</b>. Vị trí trung bình trượt liên tục 5 kỳ: 26,1 → 26,6 → 27,9 → 28,0 → <b>28,4</b>. <b>436 URL neo (chứa #) mang 103.079 hiển thị nhưng chỉ 5 click</b> — giảm tiếp từ 111.975 ngày 13/08, vẫn là nguồn bơm hiển thị rỗng lớn nhất kéo CTR và vị trí trung bình xuống.</div>
  </div>
  <div class="card kpi">
   <div class="lbl">Trang được index</div><div class="val">312<small>/710</small></div>
   <span class="tag t-warn">398 trang không index</span>
-  <div class="note">Sitemap khai báo 368 URL nhưng Google index 312 (<b>+24 so với 05/08</b>). Trong 398 trang không index: 211 "đã thu thập – chưa lập chỉ mục", 80 lỗi 404, 28 chuyển hướng, 23 noindex, 13 lỗi 404 mềm. Số liệu cập nhật 07/08/2026.</div>
+  <div class="note">Sitemap khai báo 365 URL nhưng Google index 312. Trong 398 trang không index: 211 "đã thu thập – chưa lập chỉ mục", 80 lỗi 404, 28 chuyển hướng, 23 noindex, 13 lỗi 404 mềm, 12 lỗi chuyển hướng, 9 canonical thay thế. <b>Đứng yên 3 ngày liên tiếp</b> — không có tiến triển nào ở nhóm 211 trang bị Google từ chối.</div>
  </div>
 </div>
 
 
-<h2 class="sec">Hành vi người dùng — Google Analytics 4 (13/05 – 10/08/2026)</h2>
+<h2 class="sec">Hành vi người dùng — Google Analytics 4 (ảnh chụp 12/08/2026 — chưa làm mới được)</h2>
 <div class="kpis">
  <div class="card kpi">
   <div class="lbl">Chuyển đổi ghi nhận</div><div class="val">0</div>
   <span class="tag t-bad">Không có key event nào</span>
   <div class="note">Trong 3 tháng: <b>0 key event, tỷ lệ chuyển đổi 0%, doanh thu 0₫</b>.
-  GA4 vẫn chưa được cấu hình bất kỳ chuyển đổi nào — KVY hiện <b>không thể đo được một lead nào</b> từ website. Ngày thứ 12 liên tiếp ở mức 0.</div>
+  GA4 vẫn chưa được cấu hình bất kỳ chuyển đổi nào — KVY hiện <b>không thể đo được một lead nào</b> từ website. Ngày thứ 13 liên tiếp ở mức 0. Số của khối này là ảnh chụp 12/08 do phiên GA4 hết hạn.</div>
  </div>
  <div class="card kpi">
   <div class="lbl">Tổng số phiên</div><div class="val">5.868</div>
@@ -418,27 +538,27 @@ var HMETA = [["gsc_clicks", "Lượt nhấp GSC", "up"], ["gsc_impressions", "L�
  </div>
 </div>
 
-<h2 class="sec">Ahrefs — hồ sơ liên kết, thứ hạng và độ hiện diện AI (12/08/2026)</h2>
+<h2 class="sec">Ahrefs — hồ sơ liên kết, thứ hạng và độ hiện diện AI (14/08/2026)</h2>
 <div class="kpis">
  <div class="card kpi">
-  <div class="lbl">Domain Rating</div><div class="val">26</div>
-  <span class="tag t-warn">UR 6</span>
-  <div class="note">987 backlink từ <b>628 referring domain (+176 tháng qua)</b> — tăng 47 domain chỉ trong một tuần. Nền link vẫn là tài sản mạnh nhất, dù DR lại tụt 1 điểm xuống 26.</div>
+  <div class="lbl">Domain Rating</div><div class="val">29</div>
+  <span class="tag t-ok">UR 6 · DR +3</span>
+  <div class="note">989 backlink (+160 tháng qua) từ <b>633 referring domain (+170 tháng qua)</b>. <b>DR bật từ 26 lên 29</b> — mức cao nhất từ khi bắt đầu theo dõi (27 → 26 → 29). Nền link tiếp tục là tài sản mạnh nhất của KVY.</div>
  </div>
  <div class="card kpi">
-  <div class="lbl">Từ khoá tự nhiên</div><div class="val">55</div>
-  <span class="tag t-bad">−21 tháng qua</span>
-  <div class="note">Chỉ 55 từ khoá có thứ hạng, Top 3 còn 22 (−8). Giảm liên tục: 62 → 61 → 60 → 61 → 55.</div>
+  <div class="lbl">Từ khoá tự nhiên</div><div class="val">53</div>
+  <span class="tag t-bad">−20 tháng qua</span>
+  <div class="note">Chỉ 53 từ khoá có thứ hạng, Top 3 còn 20 (−8). Giảm liên tục 6 kỳ: 62 → 61 → 60 → 61 → 55 → <b>53</b>. Đây là nghịch lý rõ nhất: link vào tăng mạnh nhưng thứ hạng vẫn rơi.</div>
  </div>
  <div class="card kpi">
-  <div class="lbl">Traffic tự nhiên / tháng</div><div class="val">191</div>
-  <span class="tag t-warn">−10 tháng qua · giá trị $364</span>
-  <div class="note">Chỉ khoảng <b>40/368 trang</b> có traffic tự nhiên. Phần còn lại bằng 0.</div>
+  <div class="lbl">Traffic tự nhiên / tháng</div><div class="val">188</div>
+  <span class="tag t-warn">−2 tháng qua · giá trị $356</span>
+  <div class="note">Chỉ khoảng <b>40/365 trang</b> có traffic tự nhiên. Phần còn lại bằng 0.</div>
  </div>
  <div class="card kpi">
-  <div class="lbl">Hiện diện AI Overviews</div><div class="val">25</div>
-  <span class="tag t-bad">−7 · còn 18 trang</span>
-  <div class="note">AI Overviews giảm 3 tuần liên tiếp (28 → 25), số trang được nhắc còn 18. AI Mode 45 phản hồi / 29 trang. Gemini 1, Copilot 1, Perplexity 1.</div>
+  <div class="lbl">Hiện diện AI Overviews</div><div class="val">23</div>
+  <span class="tag t-bad">−6 · còn 17 trang</span>
+  <div class="note">AI Overviews giảm 4 kỳ liên tiếp (28 → 25 → <b>23</b>), số trang được nhắc còn 17. AI Mode 46 phản hồi / 29 trang (+7). Perplexity 2, Gemini 1, Copilot 1.</div>
  </div>
  <div class="card kpi">
   <div class="lbl">Hiện diện ChatGPT</div><div class="val">0</div>
@@ -452,31 +572,31 @@ var HMETA = [["gsc_clicks", "Lượt nhấp GSC", "up"], ["gsc_impressions", "L�
   <div style="font-size:13px;font-weight:700;margin-bottom:14px">Vì sao 398 trang không được index</div>
   <div id="idx"></div>
   <div style="font-size:11.5px;color:#6B7280;margin-top:14px;line-height:1.7">
-   <b>211 trang "đã thu thập dữ liệu – hiện chưa được index"</b> là nhóm lớn nhất và cũng là tín hiệu chất lượng (giảm từ 246 tuần trước):
-   Google đã đọc nhưng quyết định không đưa vào chỉ mục. <b>80 trang lỗi 404</b> đang được Google chủ động thử lại —
-   nghĩa là còn link trỏ tới chúng từ đâu đó. 28 trang redirect và 9 trang canonical thay thế là bình thường. Nhóm bị chặn bởi <b>noindex tăng 8 → 23</b> — cần kiểm tra.
+   <b>211 trang "đã thu thập dữ liệu – hiện chưa được index"</b> là nhóm lớn nhất và cũng là tín hiệu chất lượng:
+   Google đã đọc nhưng quyết định không đưa vào chỉ mục. Con số này <b>đứng yên 3 ngày</b>. <b>80 trang lỗi 404</b> đang được Google chủ động thử lại —
+   nghĩa là còn link trỏ tới chúng từ đâu đó. 28 trang redirect và 9 trang canonical thay thế là bình thường. Nhóm bị chặn bởi <b>noindex 23 trang</b> — cần kiểm tra.
   </div>
  </div>
  <div class="card">
   <div style="font-size:13px;font-weight:700;margin-bottom:14px">Traffic tự nhiên theo quốc gia (Ahrefs)</div>
   <div id="geo"></div>
   <div style="font-size:11.5px;color:#6B7280;margin-top:14px;line-height:1.7">
-   KVY định vị mạnh cho thị trường <b>Singapore</b> nhưng Singapore chỉ chiếm <b>3,2%</b> traffic tự nhiên — 6 lượt/tháng, tỷ trọng còn giảm so với 3,7% tuần trước.
-   Tới 79,5% traffic đến từ Mỹ, chủ yếu qua các bài blog kỹ thuật chung chung (agile, strapi, medusa) chứ không phải nội dung B2B Singapore.
+   KVY định vị mạnh cho thị trường <b>Singapore</b> nhưng Singapore chỉ chiếm <b>3,2%</b> traffic tự nhiên — 6 lượt/tháng, đứng yên so với 13/08 và vẫn thấp hơn mức 3,7% đầu tháng.
+   Tới <b>78,7%</b> traffic đến từ Mỹ (148 lượt), tiếp theo là Ấn Độ 10,1% và Nga 5,9% — chủ yếu qua các bài blog kỹ thuật chung chung (agile, strapi, medusa) chứ không phải nội dung B2B Singapore.
   </div>
  </div>
 </div>
 
-<h2 class="sec">Độ hiện diện trên AI Search (AEO/GEO) — 12/08/2026</h2>
+<h2 class="sec">Độ hiện diện trên AI Search (AEO/GEO) — 14/08/2026</h2>
 
 <div class="aigrid">
- <div class="aicard some"><div class="p">Google AI Overviews</div><div class="n">25</div><div class="d">18 trang · <b style="color:#CE3B3B">−7 tháng qua</b></div></div>
- <div class="aicard some"><div class="p">Google AI Mode</div><div class="n">45</div><div class="d">29 trang · +2</div></div>
+ <div class="aicard some"><div class="p">Google AI Overviews</div><div class="n">23</div><div class="d">17 trang · <b style="color:#CE3B3B">−6 tháng qua</b></div></div>
+ <div class="aicard some"><div class="p">Google AI Mode</div><div class="n">46</div><div class="d">29 trang · +7</div></div>
  <div class="aicard zero"><div class="p">ChatGPT</div><div class="n">0</div><div class="d">0 trang được trích dẫn</div></div>
- <div class="aicard warn"><div class="p">Perplexity</div><div class="n">1</div><div class="d">1 trang</div></div>
+ <div class="aicard warn"><div class="p">Perplexity</div><div class="n">2</div><div class="d">2 trang · +2</div></div>
  <div class="aicard warn"><div class="p">Gemini</div><div class="n">1</div><div class="d">1 trang</div></div>
  <div class="aicard warn"><div class="p">Copilot</div><div class="n">1</div><div class="d">1 trang</div></div>
- <div class="aicard some"><div class="p">Phiên từ AI (GA4)</div><div class="n">35</div><div class="d">kênh AI Assistant · +12</div></div>
+ <div class="aicard some"><div class="p">Phiên từ AI (GA4)</div><div class="n">35</div><div class="d">kênh AI Assistant · ảnh chụp 12/08</div></div>
 </div>
 
 <div class="two">
@@ -502,8 +622,8 @@ var HMETA = [["gsc_clicks", "Lượt nhấp GSC", "up"], ["gsc_impressions", "L�
   <div class="barrow"><div class="n">Trang có H1 rõ ràng</div><div class="track"><div class="fill" style="width:83%;background:#C57A16"></div></div><div class="s" style="color:#C57A16">83%</div></div>
   <div class="barrow"><div class="n">Ảnh có alt (mô tả cho AI)</div><div class="track"><div class="fill" style="width:64%;background:#C57A16"></div></div><div class="s" style="color:#C57A16">64%</div></div>
   <div style="font-size:11.5px;color:#66708A;margin-top:14px;line-height:1.7">
-   Schema phủ tốt nhưng <b>FAQPage chỉ 36/368 trang</b> — đây là loại schema mà AI answer engine trích dẫn nhiều nhất.
-   <b>62 trang không có H1</b>, gồm toàn bộ landing page dịch vụ, khiến máy trích xuất không xác định được trang nói về cái gì.
+   Schema phủ tốt nhưng <b>FAQPage chỉ 36/365 trang</b> — đây là loại schema mà AI answer engine trích dẫn nhiều nhất.
+   <b>59 trang không có H1</b>, gồm toàn bộ landing page dịch vụ, khiến máy trích xuất không xác định được trang nói về cái gì.
    Hai điểm này là rào cản kỹ thuật trực tiếp cho việc được AI trích dẫn.
   </div>
  </div>
@@ -512,25 +632,38 @@ var HMETA = [["gsc_clicks", "Lượt nhấp GSC", "up"], ["gsc_impressions", "L�
 <div class="ins p1" style="margin-top:14px">
  <div class="k">P1 · AEO — khoảng trống lớn nhất</div>
  <h4>ChatGPT trích dẫn KVY 0 lần, trong khi đây là công ty tự định vị AI-first</h4>
- <p>Brand Radar cho thấy ChatGPT <b>0 phản hồi, 0 trang</b> trong toàn bộ kỳ đo. Perplexity, Gemini, Copilot mỗi nền tảng chỉ 1.
- Toàn bộ hiện diện AI của KVY nằm ở Google AI Overviews (25) và AI Mode (45) — tức là <b>ăn theo chỉ mục Google</b>,
+ <p>Brand Radar cho thấy ChatGPT <b>0 phản hồi, 0 trang</b> trong toàn bộ kỳ đo. Perplexity 2, Gemini 1, Copilot 1.
+ Toàn bộ hiện diện AI của KVY nằm ở Google AI Overviews (23) và AI Mode (46) — tức là <b>ăn theo chỉ mục Google</b>,
  không phải do nội dung KVY được các mô hình khác coi là nguồn đáng trích.</p>
- <p>Đáng lo hơn: AI Overviews đang <b>giảm ba tuần liên tiếp</b> (28 → 25, số trang được nhắc 21 → 18), cùng chiều với
- từ khoá tự nhiên giảm 62 → 55. Khi chỗ đứng trên Google yếu đi thì kênh AI duy nhất đang có cũng yếu theo.</p>
+ <p>Đáng lo hơn: AI Overviews đang <b>giảm bốn kỳ liên tiếp</b> (28 → 25 → 23, số trang được nhắc 21 → 17), cùng chiều với
+ từ khoá tự nhiên giảm 62 → 53. Khi chỗ đứng trên Google yếu đi thì kênh AI duy nhất đang có cũng yếu theo.</p>
  <div class="fix"><b>Cách sửa, theo thứ tự tác động:</b>
  (1) Bổ sung <code>FAQPage</code> cho toàn bộ trang dịch vụ và 30 bài blog nhiều hiển thị nhất — AI answer engine trích dẫn khối hỏi–đáp nhiều nhất.
  (2) Viết trang so sánh trực diện: <i>MedusaJS vs Shopify Plus</i>, <i>Strapi vs Contentful</i>, <i>KVY vs agency Singapore</i> — đây là dạng nội dung LLM hay lấy làm nguồn.
  (3) Trả lời thật trên Reddit / Stack Overflow / cộng đồng MedusaJS bằng tài khoản có tên KVY — nguồn cộng đồng ảnh hưởng rất mạnh tới gợi ý của LLM.
  (4) Cập nhật hồ sơ Clutch, G2, Crunchbase cho khớp nhau, vì LLM đối chiếu chéo các nguồn này.
- (5) Sửa 62 trang thiếu H1 trước — không có H1 thì máy trích xuất không biết trang nói về gì.</div>
+ (5) Sửa 59 trang thiếu H1 trước — không có H1 thì máy trích xuất không biết trang nói về gì.</div>
+</div>
+
+<div class="ins p1">
+ <div class="k">P1 · Mới phát hiện 14/08 — nghịch lý link mạnh / thứ hạng yếu</div>
+ <h4>DR tăng 26 → 29 và referring domains lên 633, nhưng từ khoá tự nhiên vẫn rơi 55 → 53</h4>
+ <p>Trong một tháng KVY nhận thêm <b>170 referring domain</b> và Domain Rating bật lên mức cao nhất từ trước tới nay (29).
+ Bình thường đây là tín hiệu rất tốt. Nhưng cùng kỳ, số từ khoá có thứ hạng giảm liên tục 6 kỳ (62 → 53), vị trí trung bình
+ GSC trượt từ 26,1 xuống <b>28,4</b>, và AI Overviews giảm từ 28 xuống 23.</p>
+ <p>Link vào tăng mà thứ hạng vẫn rơi thường có ba nguyên nhân: (a) link mới là link chất lượng thấp không truyền giá trị,
+ (b) vấn đề nằm ở chất lượng nội dung chứ không phải độ uy tín — khớp với <b>211 trang bị Google từ chối lập chỉ mục</b>,
+ hoặc (c) tín hiệu bị pha loãng bởi <b>436 URL neo bơm 103.079 hiển thị rỗng</b>. Với KVY, cả ba đều đang hiện diện cùng lúc.</p>
+ <div class="fix"><b>Việc cần làm:</b> (1) Kiểm tra 170 referring domain mới trong Ahrefs — nếu phần lớn là directory hoặc site spam thì disavow.
+ (2) Chặn URL neo khỏi chỉ mục để ngừng bơm hiển thị rỗng. (3) Ưu tiên nâng chất 30 bài có nhiều hiển thị nhất thay vì xuất bản thêm bài mới.</div>
 </div>
 
 <div class="ins p2">
  <div class="k">P2 · AEO — tín hiệu sớm đáng theo dõi</div>
  <h4>Kênh "AI Assistant" trong GA4 tăng 23 → 35 phiên, là kênh duy nhất đang lớn lên</h4>
- <p>Trong khi Organic Search giảm (1.209 → 1.141) và click GSC giảm (968 → 924), lưu lượng người thật đến từ trợ lý AI
+ <p>Trong khi Organic Search giảm (1.209 → 1.141) và click GSC giảm (968 → 909), lưu lượng người thật đến từ trợ lý AI
  <b>tăng 52%</b> dù nền còn rất nhỏ. Đây là bằng chứng đầu tiên cho thấy AI search đã bắt đầu đẩy người dùng thật về site.</p>
- <p>Với 368 trang, KVY đang có nhiều nội dung kỹ thuật chuyên sâu về MedusaJS và Strapi — đúng loại chủ đề ngách mà LLM
+ <p>Với 365 trang, KVY đang có nhiều nội dung kỹ thuật chuyên sâu về MedusaJS và Strapi — đúng loại chủ đề ngách mà LLM
  hay phải đi tìm nguồn. Khoảng trống không nằm ở lượng nội dung mà ở <b>cách trình bày để máy trích xuất được</b>.</p>
  <div class="fix"><b>Cách theo dõi:</b> tách riêng kênh AI Assistant trong GA4 thành báo cáo tuỳ chỉnh, và mỗi lần chạy audit
  ghi lại 6 chỉ số Brand Radar vào <code>history.csv</code> để nhìn xu hướng thay vì chỉ số chụp một thời điểm.</div>
@@ -920,14 +1053,15 @@ Ngưỡng màu: xanh &lt; 1s · cam 1–3s · đỏ &gt; 3s.
 </div>
 
 <div class="foot">
-Crawl trực tiếp bằng Chrome (same-origin fetch) ngày 12/08/2026. <b>Số liệu đo thật</b>, không ước lượng: TTFB, HTTP status,
+Crawl trực tiếp bằng Chrome (same-origin fetch) ngày 13/08/2026. <b>Số liệu đo thật</b>, không ước lượng: TTFB, HTTP status,
 số từ vùng nội dung (đã loại header/footer/nav/script/form/SVG), số script JSON-LD và loại schema, ảnh và alt trong vùng nội dung,
 số link nội bộ, kích thước HTML, độ dài title và meta description, số thẻ H1, số bước nhảy heading.
 Nguồn URL: 11 sitemap con từ <code>sitemap_index.xml</code> (Rank Math) — 365 URL duy nhất, đã đo đủ 365.
 Số thẻ H1 đếm trên HTML gốc và đã đối chiếu lại với DOM sau khi JS render trên nhóm trang dịch vụ.
 Trong bảng, đường dẫn bắt đầu bằng <code>~</code> tương đương tiền tố <code>/blog/</code>.
-<b>Nguồn dữ liệu hiệu quả:</b> Google Search Console (property https://kvytechnology.com/, khoảng 30/04–29/07/2026, báo cáo Hiệu suất theo Trang và báo cáo Lập chỉ mục trang cập nhật 24/07/2026)
- và Ahrefs Site Explorer (snapshot 12/08/2026, chế độ Subdomains). GA4 property "Kvytech" (tài khoản KVY TECH 2025, ID a269209106p377750984), khoảng 06/05–03/08/2026, báo cáo Engagement → Landing page, 100 landing page hàng đầu. Dữ liệu GSC theo trang đã gộp các URL trùng (cộng click và hiển thị, vị trí tính trung bình có trọng số theo hiển thị).
+<b>Cập nhật 13/08/2026:</b> crawl lại 368 URL (367 trả về 200), GSC và Ahrefs làm mới cùng ngày. <b>GA4 không truy cập được</b> (Google yêu cầu xác minh đăng nhập lại) nên cột Phiên/Tương tác và các số GA4 vẫn là ảnh chụp 12/08/2026.
+ <b>Nguồn dữ liệu hiệu quả:</b> Google Search Console (property https://kvytechnology.com/, khoảng 30/04–29/07/2026, báo cáo Hiệu suất theo Trang và báo cáo Lập chỉ mục trang cập nhật 24/07/2026)
+ và Ahrefs Site Explorer (snapshot 13/08/2026, chế độ Subdomains). GA4 property "Kvytech" (tài khoản KVY TECH 2025, ID a269209106p377750984), khoảng 06/05–03/08/2026, báo cáo Engagement → Landing page, 100 landing page hàng đầu. Dữ liệu GSC theo trang đã gộp các URL trùng (cộng click và hiển thị, vị trí tính trung bình có trọng số theo hiển thị).
  Cột Phiên/Tương tác chỉ có ở 94 trang khớp được giữa GA4 và sitemap; cột Chuyển đổi hiển thị 0 vì GA4 chưa cấu hình key event nào.
  Cột Clicks/Impressions/CTR/Vị trí chỉ có ở các trang đạt tối thiểu 50 lượt hiển thị trong kỳ (255/368 trang); dấu — nghĩa là dưới ngưỡng đó.
  Tổng hiển thị theo cấp trang lớn hơn tổng của toàn site vì Search Console phân bổ hiển thị khác nhau giữa hai cấp báo cáo; các con số tổng lấy theo báo cáo tổng của GSC.
@@ -936,374 +1070,371 @@ Trong bảng, đường dẫn bắt đầu bằng <code>~</code> tương đươn
 </div>
 
 <script>
-var RAW = `~ecommerce/medusa-js-vs-shopify-marketplace,1,59,1804,1,1,11,4,0,1,48,140,236,0,0,,0,
-~ecommerce/medusa-js-multi-vendor-architecture,1,60,1514,1,1,9,4,0,1,50,148,233,0,0,,0,
-~ecommerce/is-medusa-js-right-for-your-marketplace,1,64,1514,1,1,11,4,0,1,47,151,233,0,0,,0,
-~ecommerce/build-a-marketplace-in-singapore,1,63,1942,1,0,9,4,0,1,60,139,234,0,0,,16,21
-~software/disadvantages-of-medusa-js,1,61,2838,1,1,14,1,0,1,89,155,248,72,8923,10.1,102,53
-~ecommerce/medusa-js-marketplace,1,59,1458,1,1,10,4,0,1,49,146,233,2,444,12.1,0,
-~ecommerce/marketplace-platform-limitations,1,63,1777,1,0,6,5,4,1,82,146,232,0,0,,14,4
-~ecommerce/ecommerce-erp-integration,1,63,3040,1,0,6,5,4,1,54,149,241,0,0,,0,
-~ecommerce/custom-marketplace-development,1,73,2240,1,1,10,4,0,1,58,159,239,1,241,27.4,0,
-~ecommerce/custom-ecommerce-platform-development-for-growth,1,72,2904,1,0,15,6,2,1,73,154,242,0,0,,0,
-~software/modernizing-software-for-quality-control,1,68,1005,1,0,6,4,3,1,63,141,226,0,0,,0,
-~software/predictability-in-software-engineering,1,94,955,1,0,6,5,1,1,87,141,227,1,75,8.3,0,
-~software/software-development-project-management,1,68,3032,1,1,66,16,1,1,57,113,260,0,441,30.5,0,
-~software/avoiding-software-project-failure,1,65,1533,1,0,6,5,1,1,57,123,232,0,69,11.9,0,
-~software/web-development-jobs,1,59,1528,1,0,42,6,1,1,42,136,237,0,82,27.9,0,
-~software/optimize-web-app-with-webassembly,1,76,2851,1,0,24,12,1,1,52,139,249,0,2396,15.2,19,2
-~software/top-strapi-development-companies,1,64,2677,1,0,37,15,13,1,53,107,253,0,1375,25.3,0,
-~technologies/multi-factor-authentication,1,72,2621,1,0,19,3,1,1,50,150,238,0,154,70.3,0,
-~ecommerce/medusa-b2b-ecommerce-platform,1,72,2477,1,0,15,6,3,1,74,126,238,0,0,,17,14
-~ecommerce/medusa-approval-workflows,1,68,2466,1,0,18,6,1,1,82,128,237,0,0,,0,
-~ecommerce/ecommerce-inventory-management-integration,1,63,1950,1,0,6,3,2,1,108,144,233,0,0,,14,5
-~ecommerce/multi-warehouse-ecommerce-inventory,1,67,1737,1,0,6,5,4,1,87,237,233,1,63,7.8,0,
-~ecommerce/ecommerce-website-building,1,62,7287,1,0,57,4,0,1,54,146,289,0,170,23.6,0,
-~technologies/technologies-web-development,1,60,3889,1,0,53,6,2,1,43,144,259,0,190,72.4,0,
-~ecommerce/7-signs-youre-ready-for-a-custom-e-commerce-platform,1,60,3938,1,0,22,1,0,1,78,145,246,0,96,13.6,0,
-~software/top-mobile-app-development-companies-in-vietnam,1,64,2254,1,0,22,14,0,1,52,139,243,1,2055,31.5,0,
-~ui-ux/role-information-architecture,1,61,2084,1,0,18,4,1,1,36,111,233,2,299,24,0,
-~software/api-security-andauthentication,1,65,2151,1,1,32,1,0,1,60,145,243,0,683,41.7,0,
-~software/singapores-tech-workforce,1,58,1782,1,0,26,6,0,1,91,114,237,2,1284,56.8,13,0
-~ecommerce/building-ecommerce-systems,1,61,2702,1,0,7,1,0,1,43,130,242,0,0,,0,
-~ui-ux/ux-design-trends,1,54,2181,1,0,25,4,1,1,57,134,238,0,0,,0,
-~software/user-adoption-strategies,1,67,1594,1,0,33,8,0,1,60,152,237,1,1006,46.9,0,
-~technologies/low-code-no-code,1,67,1770,1,0,32,2,0,1,58,102,235,0,0,,0,
-~ecommerce/medusa-marketplace-architecture,1,61,2488,1,0,18,6,0,1,55,156,237,1,285,16.4,0,
-~ecommerce/medusa-erp-integration-for-scalable-b2b-commerce,1,60,2492,1,0,16,6,0,1,48,152,237,0,0,,0,
-~ecommerce/medusa-b2b-pricing-open-source-engine-for-complex-deals,1,56,2542,1,0,18,6,0,1,81,153,238,0,0,,18,3
-~ai/ai-consulting-services-for-modern-enterprises,1,64,1869,1,0,10,7,0,1,68,142,235,0,104,26.8,0,
-~ai/generative-ai-in-the-integration,1,61,1592,1,0,9,6,0,1,67,190,233,1,191,9.8,12,0
-~ai/production-ai-development-from-prototype-to-scale,1,58,2610,1,0,18,6,0,1,75,158,240,0,0,,0,
-~ai/why-ai-fails-in-production,1,59,2552,1,0,11,6,3,1,51,158,238,0,0,,0,
-~technologies/headless-commerce-risks-costs-complexity-and-tradeoffs,1,70,2623,1,0,14,5,1,1,82,150,240,0,0,,0,
-~technologies/rewrite-vs-refactor-legacy-system,1,62,2419,1,0,16,6,0,1,74,97,237,0,0,,14,0
-~technologies/software-product-discovery,1,66,2017,1,0,15,6,5,1,48,164,235,0,77,7.6,0,
-~ecommerce/dc2-ecommerce-trends,1,59,2838,1,0,12,4,0,1,73,164,240,9,390,12.3,32,10
-~technologies/machine-learning-consulting-companies,1,65,1767,1,0,14,5,0,1,49,179,233,2,4230,31.5,0,
-~product-development/mobile-app-development-singapore,1,67,1693,1,0,10,5,0,1,49,129,233,1,91,7,0,
-~ecommerce/ecommerce-web-development-singapore,1,61,1930,1,0,6,7,1,1,58,128,235,0,3760,15.8,0,
-~software/mvp-software-development-services,1,60,1901,1,0,6,5,0,1,57,163,234,2,2363,10.5,0,
-~ecommerce/headless-b2b-ecommerce-development,1,67,1506,1,0,6,5,0,1,53,144,234,0,61,7.2,0,
-~software/risk-management-in-software-development,1,63,2388,1,0,42,12,0,1,47,158,250,13,15439,24.9,20,2
-~software/user-centric-web-experiences-for-singapore-companies,1,63,1801,1,0,22,8,0,1,62,157,239,0,126,31.2,0,
-~software/mobile-app-trends-singapore,1,57,1837,1,0,37,10,0,1,39,158,240,0,316,17.7,0,
-~software/gain-a-competitive-advantage-with-custom-software-development,1,66,1598,1,0,33,13,0,1,86,156,239,0,168,15.7,0,
-~software/top-web-development-frameworks-in-singapore,1,70,1645,1,0,33,18,0,1,48,155,242,1,105,23.8,0,
-~software/troubleshooting-and-bug-fixes,1,72,1715,1,0,30,9,0,1,58,135,240,0,480,15.8,0,
-~software/front-end-development-in-singapore,1,56,2133,1,0,45,16,0,1,62,154,250,0,178,22.5,0,
-~software/front-end-development-in-singapore-2,1,65,2136,1,0,45,16,0,1,62,154,250,0,0,,0,
-~software/tech-careers-in-singapore,1,65,1891,1,0,51,10,0,1,60,157,243,0,62,45.1,0,
-~software/vietnam-destination-for-software-development,1,66,2104,1,0,40,12,0,1,61,143,247,2,2573,12,0,
-~software/digital-transformation-strategies,1,62,2210,1,0,49,12,0,1,55,155,247,1,2102,25.1,0,
-~software/developer-portfolio-guide-for-singapore-tech-professionals,1,67,1980,1,0,27,12,0,1,60,125,243,1,475,19.6,13,4
-~software/top-backend-technologies-guide-for-singapore-companies,1,62,2842,1,0,43,17,0,1,70,144,258,0,257,22.9,0,
-~ui-ux/ux-design-trends-in-singapore,1,65,1663,1,0,43,9,0,1,53,138,240,0,64,38.8,0,
-~software/local-seo-boost-singapore-tech-business,1,63,2421,1,0,21,12,0,1,53,149,245,0,0,,0,
-~software/custom-software-development-for-the-retail-industry,1,70,1969,1,0,36,11,0,1,79,156,245,0,8901,74.7,0,
-~software/software-engineering-education-in-singapore,1,71,2074,1,0,23,9,0,1,58,152,242,2,200,31.1,16,0
-~software/training-and-support-after-software-implementation,1,66,1957,1,0,34,8,0,1,58,150,240,1,2273,25.4,0,
-~software/startup-funding-in-singapore,1,62,2259,1,0,32,12,0,1,74,153,250,1,4372,48.3,0,
-~software/vietnam-destinations-cost-effective-outsourcing,1,69,1551,1,0,24,6,0,1,93,109,237,1,1179,22.4,0,
-~software/cybersecurity-challenges-in-singapore,1,66,1706,1,0,20,7,0,1,70,105,237,0,71,24.6,19,0
-~software/government-support-for-software-development-in-vietnam,1,62,1417,1,0,28,6,0,1,59,89,236,2,372,26.2,0,
-~software/blockchain-and-cryptocurrency-in-2024-singapores-tech-industry,1,60,1797,1,0,22,8,0,1,78,146,239,0,0,,0,
-~technologies/navigating-cloud-computing-essential-solutions-for-singapores-tech-innovators,1,70,1925,1,0,35,10,0,1,104,154,242,0,77,65,0,
-~software/benefits-and-risks-integrating-ai-and-ml,1,68,2115,1,0,47,13,0,1,61,140,247,0,0,,0,
-~software/web-development-data-privacy,1,69,2156,1,0,16,8,0,1,51,121,241,5,1954,28.2,23,0
-~software/mastering-web-development,1,70,4015,1,0,94,12,0,1,125,157,277,0,766,30,14,1
-~software/top-project-management-tools,1,74,2559,1,0,43,7,0,1,87,156,251,0,1634,22.7,0,
-~software/singapores-tech-talent,1,69,2778,1,0,27,7,0,1,57,110,247,0,4708,19.2,0,
-~technologies/tech-trends-in-singapore,1,73,1930,1,0,36,9,0,1,46,112,245,1,3301,55.5,0,
-~software/ai-and-ml-software-development,1,65,2498,1,0,38,11,0,1,86,143,247,0,1533,22.1,0,
-~software/singapores-startup-ecosystem,1,61,2526,1,0,39,10,0,1,56,128,250,0,351,40.7,0,
-~software/off-the-shelf-solutions,1,65,1870,1,0,25,5,0,1,55,147,237,0,2779,28.2,0,
-~software/app-modernization-services-in-vietnam,1,66,2282,1,0,44,22,0,1,113,153,252,0,186,13.5,0,
-~software/affordable-tech-solutions-singapore,1,55,2556,1,0,24,19,0,1,69,123,251,1,80,10.6,0,
-~software/system-integration,1,76,1491,1,0,29,5,0,1,59,117,235,4,5965,55.1,17,4
-~software/choose-right-development-team,1,75,3025,1,0,34,6,0,2,58,176,250,1,73,15.8,13,1
-~software/software-development-partner,1,72,2769,1,0,44,8,0,1,84,109,248,0,1854,21.7,0,
-~software/javascript-frameworks-trends-dominance-emerging-contenders,1,57,1437,1,0,26,5,0,1,59,122,235,0,234,33.4,15,0
-~software/low-code-no-code-web-development,1,77,1611,1,0,42,5,0,1,54,146,238,0,295,29.8,0,
-~software/headless-cms-web-development,1,69,1698,1,0,32,7,0,1,60,138,239,0,524,39,13,0
-~software/ai-in-web-development,1,71,1464,1,0,34,7,0,1,57,128,237,0,0,,0,
-~software/headless-commerce-development,1,66,1455,1,0,26,6,0,1,59,134,235,0,0,,0,
-~software/developer-upskilling-programs-singapore,1,58,1595,1,0,17,8,0,1,47,140,235,0,0,,0,
-~software/government-grants-for-small-businesses-singapore,1,65,1499,1,0,21,8,0,1,56,154,237,0,5858,63.2,0,
-~software/affordable-web-design-ux-in-singapore,1,63,1643,1,0,22,9,0,1,44,133,234,0,396,47.2,0,
-~software/version-control-and-collaboration-in-web-development,1,76,2207,1,0,27,10,0,1,57,156,241,1,7998,16.7,18,35
-~software/choosing-the-right-it-company-in-singapore,1,80,4688,1,0,79,7,0,1,54,156,274,0,58,25.6,0,
-~software/estimate-development-time,1,77,2432,1,0,32,6,0,1,72,125,243,25,10104,26.5,65,20
-~software/web3-dapp,1,79,2331,1,0,20,9,0,1,60,122,243,1,639,28.5,13,2
-~software/custom-software-development-process,1,68,2891,1,0,62,9,0,1,60,121,252,2,9781,25.8,0,
-~software/ensuring-digital-transformation-strategy-adapts-to-technological-advancements,1,60,2295,1,0,24,9,0,1,82,148,243,1,946,17,14,0
-~software/cost-of-software-development-in-vietnam,1,57,2684,1,0,16,10,0,1,56,134,243,2,3177,14.3,0,
-~software/software-scalability,1,61,2929,1,0,37,10,0,1,48,106,250,5,43059,12.4,19,10
-~software/web-design-and-development,1,65,2555,1,0,27,9,0,1,51,133,247,1,20087,22.8,0,
-~software/data-privacy-regulations,1,77,2475,1,0,25,10,0,1,53,135,243,7,2050,27.5,28,9
-~software/back-end-development-serverless-architectures-and-cloud-functions,1,95,2816,1,0,24,11,0,1,69,125,248,0,984,23.2,0,
-~software/custom-development-services-for-strapi,1,67,2010,1,0,37,4,0,1,59,128,242,0,2253,27.1,0,
-~software/types-of-strapi-custom-development-services,1,66,2869,1,0,44,5,0,1,53,134,250,0,0,,0,
-~software/case-studies-of-custom-development-projects-with-strapi,1,69,2579,1,0,23,14,0,1,59,77,245,6,1037,10.3,17,20
-~software/strapi-custom-development-services,1,66,2013,1,0,27,6,0,1,80,156,238,0,443,48.1,0,
-~software/select-top-custom-development-services-for-strapi,1,59,1348,1,0,22,5,0,1,57,164,234,0,338,15.7,0,
-~software/exploring-strapi-plugins,1,92,1529,1,0,10,2,0,1,86,160,233,0,401,20.3,0,
-~software/protecting-data-and-systems,1,63,2158,1,0,29,9,0,1,59,147,242,0,54,33.1,0,
-~software/software-development-and-digital-transformation-budget-roadmap,1,62,2816,1,0,35,12,0,1,57,115,253,2,3043,23.9,0,
-~software/seo-for-single-page-applications,1,66,2529,1,0,27,9,0,1,61,147,244,0,37310,33.4,18,3
-~software/progressive-enhancement-and-inclusive-design,1,63,3314,1,0,35,14,0,1,57,143,251,0,556,17,0,
-~software/testing-frameworks-continuous-integration,1,66,2218,1,0,25,10,0,1,57,145,244,0,203,19.5,0,
-~software/features-of-custom-software,1,53,2134,1,0,36,8,0,1,53,141,242,2,3964,72.6,14,0
-~software/leverage-digital-transformation,1,59,2478,1,0,36,7,0,1,55,152,249,0,0,,0,
-~software/business-strategy-and-goals,1,68,2693,1,0,44,7,0,1,54,105,251,5,6191,19.7,20,14
-~software/pwas-vs-native-apps,1,63,2265,1,0,25,7,0,1,86,136,242,2,751,41.8,13,3
-~software/software-development-cost,1,64,2418,1,0,37,9,1,1,103,116,246,0,1391,77.9,0,
-~software/task-runners-and-build-automation-tools,1,64,2269,1,0,25,6,0,1,42,115,242,2,1705,16.5,16,0
-~software/ongoing-maintenance-and-subscription-fees,1,61,3108,1,0,26,13,0,1,58,119,252,8,6471,34,39,16
-~software/cdns-content-delivery-networks,1,65,2465,1,0,20,9,0,1,58,149,243,0,2361,16.3,0,
-~software/backend-development-and-apis,1,58,2706,1,0,36,11,0,1,58,122,246,12,6715,17.8,33,10
-~software/roi-in-software-development,1,56,2468,1,0,37,10,0,1,47,118,244,3,3952,21.2,16,1
-~ecommerce/what-is-ecommerce,1,58,5808,1,0,53,18,0,1,53,112,275,1,6320,25.8,24,5
-~software/outsource-web-development-services,1,58,3286,1,0,57,12,0,1,55,141,257,0,0,,0,
-~software/12-agile-principles,1,54,2563,1,0,38,14,0,1,49,132,253,6,13977,27.8,31,21
-~software/security-concerns-in-mobile-app-development,1,52,2178,1,0,28,12,0,1,80,120,241,2,1356,54.9,19,22
-~software/what-is-agile-methodology,1,56,2618,1,0,30,8,0,1,53,128,245,0,0,,0,
-~software/ai-in-software-development,1,59,6263,1,0,61,2,0,1,48,126,279,2,1918,37.5,23,25
-~software/agile-vs-waterfall,1,64,4326,1,0,26,2,0,1,56,139,261,1,1966,35.2,15,3
-~ecommerce/b2b-ecommerce,1,61,5133,1,0,28,7,3,1,62,134,265,3,8741,23.8,26,5
-~ecommerce/ecommerce-in-japan,1,65,7563,1,0,38,3,0,1,56,138,289,2,4136,49.6,16,38
-~ecommerce/ecommerce-in-philippines,1,69,7181,1,0,47,4,0,1,59,137,284,4,2385,33.6,37,19
-~ecommerce/ecommerce-in-vietnam,1,67,7992,1,0,38,4,0,1,58,148,292,1,124,21.6,0,
-~ecommerce/ecommerce-enablers,1,60,6980,1,0,67,3,0,1,47,141,289,9,3189,28.1,31,17
-~ecommerce/ecommerce-marketing,1,59,8176,1,0,39,3,0,1,56,107,290,4,22352,67.1,22,2
-~ecommerce/e-commerce-for-services,1,64,5571,1,0,37,4,0,1,59,135,268,1,2361,15.9,0,
-~software/strapi-development-company,1,64,2207,1,0,37,6,0,1,48,157,245,0,491,28.9,0,
-~software/cost-of-hiring-a-strapi-development-company,1,62,2332,1,0,22,3,0,1,51,161,243,0,157,27.7,0,
-~software/find-the-best-strapi-development-company,1,63,1871,1,0,45,4,0,1,56,142,239,0,235,45.4,0,
-~software/customization-in-medusa-js,1,62,1937,1,1,8,1,0,1,55,155,244,5,1375,16.1,0,
-~ecommerce/ecommerce-strategy,1,62,9352,1,0,44,3,0,1,60,134,310,1,9842,33.8,13,5
-~software/managing-offshore-software-teams,1,60,3316,1,0,39,10,0,1,99,150,255,0,2466,39.7,0,
-~software/microservices-vs-monolithic,1,75,2280,1,0,26,9,0,1,58,144,244,0,789,25.7,23,0
-~software/agile-case-studies,1,70,4041,1,0,38,14,0,1,49,136,269,235,24205,15.3,468,40
-~software/4-agile-core-values,1,67,1841,1,1,32,6,0,1,58,149,241,0,1884,29.2,0,
-~software/agile-software-development,1,66,1502,1,1,33,5,0,1,56,141,240,3,5234,27.2,30,2
-~ecommerce/ecommerce-trends,1,60,7640,1,1,40,3,0,1,57,143,287,0,117,31.9,0,
-~ecommerce/type-of-ecommerce,1,59,8660,1,1,33,8,4,1,43,146,299,0,1859,28.7,0,
-~technologies/headless-ecommerce,1,61,1997,1,0,26,2,0,1,43,130,236,0,0,,0,
-~software/software-quality-non-technical-ceo,1,62,2364,1,0,23,4,0,1,57,145,239,0,79,21.6,0,
-~software/high-quality-software,1,60,1445,1,0,21,2,0,1,60,114,230,0,0,,0,
-~technologies/production-ai-vs-prototype-ai-why-most-systems-fail-after-the-demo,1,62,3239,1,0,19,4,0,1,92,143,243,1,171,10.3,0,
-~ecommerce/mobile-first-ux-for-sea-e-commerce-2,1,60,1822,1,0,7,1,0,1,86,156,232,0,0,,0,
-~software/top-strapi-plugins,1,60,3280,1,1,22,1,0,1,86,115,255,13,2290,12.5,25,51
-~software/strapi-vs-joomla-2,1,62,1787,1,1,11,1,0,1,45,101,239,0,136,13.6,0,
-~technologies/deploying-ai,1,61,3356,1,0,22,6,4,1,47,153,246,0,0,,0,
-~software/7-signs-your-sme-needs-custom-software-instead-of-more-saas-tools,1,64,2571,1,0,7,1,0,1,71,155,238,0,0,,0,
-~ui-ux/mobile-first-ux-for-sea-e-commerce,1,61,2241,1,0,9,2,0,1,56,123,236,0,118,10.2,0,
-~technologies/vibe-coding,1,62,2837,1,0,6,1,0,1,56,156,238,0,0,,0,
-~ecommerce/b2b-workflows,1,67,2448,1,0,7,1,0,1,66,113,238,0,77,12.5,0,
-~ecommerce/software-cost-estimation,1,61,3312,1,0,6,5,0,1,58,132,245,1,814,37.4,0,
-~ecommerce/e-commerce-in-asia,1,57,8433,1,1,49,3,0,1,58,145,299,0,326,39.7,33,21
-~ecommerce/ecommerce-in-singapore,1,66,7590,1,1,47,3,0,1,53,127,291,4,6889,25.7,18,4
-~ecommerce/ecommerce-in-china,1,66,8108,1,1,22,3,0,1,53,145,292,1,10361,43.7,54,10
-~ecommerce/ecommerce-in-india,1,69,7966,1,1,18,3,0,1,54,145,289,2,2546,48.8,0,
-~ecommerce/ecommerce-business,1,65,6641,1,1,22,4,0,1,60,118,278,0,0,,0,
-~ecommerce/ecommerce-logistic,1,71,9293,1,1,32,7,3,1,58,108,307,1,1457,58.3,12,3
-~software/it-companies-in-singapore,1,90,3548,1,0,61,22,0,1,57,110,269,0,5021,56.3,0,
-~software/digital-transformation-strategies-for-singaporean-enterprises,1,56,2988,1,0,30,12,0,1,98,157,253,0,168,57.9,0,
-~software/web-development-in-singapore,1,58,3096,1,0,31,12,0,1,109,152,250,0,151,29.9,0,
-~software/choosing-the-right-app-development-company-for-smes-in-singapore,1,58,2535,1,0,53,11,0,1,89,158,251,0,92,21.1,0,
-~software/mobile-first-development,1,58,1911,1,0,31,10,0,1,56,156,239,0,79,25.1,0,
-~software/vietnams-software-development-industry,1,65,1992,1,0,43,11,0,1,47,128,244,1,554,59,14,14
-~software/creating-accessible-software,1,69,1892,1,0,28,9,0,1,68,106,239,0,0,,0,
-~software/top-web-development-companies-in-vietnam-leading-the-way-in-digital-innovation,1,63,2141,1,0,40,13,0,1,104,148,244,0,262,16.2,0,
-~software/budget-friendly-tech-solutions-for-singapore,1,61,1582,1,0,9,8,0,1,68,158,234,0,542,12.4,15,1
-~software/leading-generative-ai-development-services-providers-in-vietnam-transforming-industries-and-driving-innovation,1,60,1460,1,0,12,11,0,1,136,157,235,0,202,22.9,0,
-~software/why-choose-a-strapi-development-company,1,54,1704,1,0,32,8,0,1,51,148,238,0,1507,20,0,
-~software/hiring-a-strapi-development-company,1,69,1857,1,0,21,7,0,1,59,119,238,0,100,45.5,0,
-~software/benefits-of-custom-strapi-development-services,1,77,6492,1,0,69,5,0,1,54,130,287,0,76,25.7,0,
-~product-development/minimum-viable-product-approach-guide,1,72,2103,1,0,8,7,1,1,58,132,233,1,251,17,14,4
-~product-development/the-ultimate-guide-to-mvp,1,57,919,1,0,17,10,0,1,55,150,229,0,0,,0,
-~technologies/corppass-and-singpass,1,58,1012,1,0,16,8,0,1,56,152,230,4,1085,12.9,22,16
-~product-development/building-success-with-a-mvp,1,63,4076,1,0,28,13,0,1,52,142,262,0,0,,0,
-~product-development/product-roadmap-starup,1,63,1540,1,0,17,4,0,1,57,108,231,0,0,,0,
-~ui-ux/ux-in-product-development,1,69,2096,1,0,18,4,0,1,51,110,234,0,817,25.1,0,
-~ui-ux/a-digital-product-with-ux-design,1,63,1735,1,0,20,5,1,1,45,86,231,0,0,,0,
-~ui-ux/sketching-startup-product-development,1,66,1735,1,0,17,4,1,1,52,129,231,1,1270,8.3,0,
-~ui-ux/user-flow-for-startup-founder,1,66,1849,1,0,19,4,1,1,58,104,233,0,0,,0,
-~ui-ux/the-power-of-ux-wireframes,1,59,2004,1,0,20,5,1,1,57,99,233,0,408,46.1,0,
-~technologies/responsive-design,1,67,1910,1,0,17,4,1,1,52,136,232,0,502,22.7,0,
-~ui-ux/power-interactive-prototypes,1,56,1652,1,0,19,4,1,1,52,137,230,0,691,13.3,0,
-~technologies/exploring-headless-cms,1,62,1926,1,0,16,3,1,1,52,119,232,0,0,,0,
-~software/non-functional-requirements,1,56,1934,1,0,24,2,0,1,51,133,234,5,8751,28,27,11
-~software/functional-requirements,1,61,1411,1,0,27,3,0,1,58,141,230,2,3427,58.6,0,
-~software/accessibility-product-development,1,59,2038,1,0,28,4,0,1,54,133,237,0,944,33.5,0,
-~software/usability-product-development,1,53,2025,1,0,31,3,0,1,49,139,236,0,0,,0,
-~technologies/mobile-app-development,1,57,3940,1,0,26,6,0,1,49,120,255,0,0,,0,
-~ecommerce/data-driven-decision-making-leveraging-analytics-in-medusa-js,1,61,3234,1,0,6,2,1,1,87,156,247,1,473,9.1,0,
-~technologies/the-new-rules-for-a-predictable-investor-ready-mvp-in-2026,1,59,3624,1,0,6,6,0,1,84,155,249,0,0,,0,
-~technologies/legacy-system-modernization,1,75,4166,1,0,6,6,0,1,60,156,252,0,118,55.4,15,0
-~technologies/machine-learning-for-smes,1,61,2351,1,0,7,1,0,1,70,105,237,1,117,10.3,0,
-~ui-ux/app-design-in-2026-best-practices-trends-top-tools-for-modern-apps,1,58,1430,1,0,6,1,0,1,95,156,227,5,2807,10.3,39,18
-~ecommerce/the-hidden-costs-of-manual-b2b-workflows-for-singapore-smes,1,86,3159,1,0,6,1,0,2,84,68,245,0,101,13.5,0,
-~ecommerce/data-driven-ux-for-singapore-ecommerce,1,53,1951,1,0,7,1,0,1,38,161,234,0,65,17.4,0,
-~ecommerce/why-open-source-drives-superior-roi-for-b2b-e-commerce,1,62,2628,1,0,7,1,0,1,54,156,236,0,149,10.5,0,
-~ecommerce/use-ai-on-medusa-js-drive-sales,1,59,1421,1,0,6,1,0,1,47,135,226,1,300,12.6,0,
-~ecommerce/singapore-b2b-e-commerce-in-q4,1,62,2739,1,0,6,1,0,1,117,157,240,0,124,14.8,0,
-~ecommerce/singapore-b2b-ai-integrationn,1,62,2497,1,0,6,1,0,1,28,165,236,2,126,11.6,0,
-~ecommerce/medusa-js-vs-shopify-plus-for-b2b-in-singapore,1,57,2367,1,0,7,1,0,1,46,138,240,0,290,12.6,0,
-~ecommerce/b2b-ecommerce-for-singapore,1,62,1957,1,0,6,1,0,1,59,151,230,0,0,,0,
-~ecommerce/singapore-ecommerce-compliance-taxes-data-and-rules,1,62,3231,1,0,6,1,0,1,53,140,240,1,189,40.7,0,
-~ecommerce/medusa-js-ecommerce-maintenance-checklist,1,54,570,1,0,6,1,0,1,100,142,223,0,0,,0,
-~ecommerce/ecommerce-tech-stack-medusa,1,57,972,1,0,6,1,0,1,51,153,231,1,207,10.8,0,
-~ecommerce/quote-based-ordering-in-b2b,1,62,4841,1,0,6,1,0,1,93,240,266,3,4709,13.2,15,9
-~ecommerce/net-payment-terms-in-b2b,1,88,3004,1,0,6,1,0,1,94,157,242,0,1949,31.8,0,
-~ecommerce/price-negotiation-chat-in-b2b,1,60,2057,1,0,8,1,0,1,119,317,237,2,474,11.8,0,
-~ecommerce/b2b-subscription-ordering,1,56,2811,1,0,6,1,0,1,103,156,243,0,58,17,0,
-~ecommerce/request-for-quote-rfq-system,1,55,2995,1,0,14,1,0,1,114,124,245,5,2910,43.7,24,11
-~ecommerce/custom-quote-approvals-in-b2b,1,56,1953,1,0,20,1,0,1,112,154,237,0,84,7.8,15,1
-~ecommerce/flexible-business-models-with-medusa-js,1,62,1420,1,1,6,1,0,1,57,146,233,2,2352,18.9,0,
-~ecommerce/enhancing-customer-experience-in-e-commerce-with-medusa-js,1,63,1397,1,0,6,1,0,1,83,154,229,0,136,15.4,0,
-~ecommerce/optimizing-checkout-experiences-with-medusa-js-best-practices,1,61,1930,1,0,9,1,0,1,87,99,236,5,897,10.4,13,20
-~ecommerce/reorder-feature-for-b2b-customers,1,56,1645,1,0,20,1,0,1,89,222,237,9,1774,7.8,16,5
-~ecommerce/volume-discounts,1,60,1728,1,0,12,1,0,1,65,150,235,5,5949,21.9,34,4
-~ecommerce/moq-in-b2b-ecommerce,1,54,2008,1,0,16,1,0,1,107,142,238,0,0,,0,
-~ecommerce/ecommerce-customer-experience,1,51,3377,1,0,15,1,0,1,94,157,250,0,0,,0,
-~ecommerce/tiered-pricing,1,67,2605,1,0,6,1,0,1,93,154,241,2,5325,15,27,8
-~ecommerce/user-generated-content-in-ecommerce,1,59,1885,1,0,9,2,0,1,54,154,237,0,0,,0,
-~ecommerce/building-customer-trust-in-ecommerce,1,55,1439,1,0,15,2,1,1,36,141,232,0,57,49.7,0,
-~ecommerce/gdpr-compliance-for-ecommerce,1,62,2244,1,0,13,2,0,1,63,136,237,3,1099,26,20,3
-~ecommerce/customer-segmentation-and-personalization,1,59,2630,1,0,6,1,0,1,54,145,241,3,4132,16.2,15,1
-~ecommerce/ecommerce-customer-data-collection,1,55,2191,1,0,16,1,0,1,50,111,237,0,0,,0,
-~ecommerce/customer-centric-in-ecommerce,1,58,2337,1,0,7,3,0,1,103,123,238,0,223,31.3,0,
-~ecommerce/customer-accounts-and-authentication,1,56,2140,1,0,11,4,0,1,44,131,238,0,0,,0,
-~ecommerce/understanding-your-customer,1,62,1930,1,0,11,1,0,1,57,135,235,0,0,,0,
-~ecommerce/b2b-vs-b2c-customers,1,59,2704,1,0,6,1,0,1,66,132,243,0,0,,0,
-~ecommerce/boosting-e-commerce-success-marketing-strategies-for-medusa-js-stores,1,58,1710,1,0,7,1,0,1,95,156,232,3,685,9.2,0,
-~software/product-management-with-medusa-js,1,57,1560,1,1,8,1,0,1,46,149,237,4,3180,13,18,15
-~software/why-use-medusa-js-for-e-commerce,1,59,1490,1,1,8,1,0,1,58,123,236,1,789,12.2,0,
-~software/e-commerce-with-medusa-js,1,61,1700,1,1,8,1,0,1,71,136,236,0,277,20.2,0,
-~software/medusa-js-e-commerce-consumer-behavior,1,62,1374,1,1,8,1,0,1,73,148,234,1,174,10.9,0,
-~software/medusa-js-success-stories,1,58,2237,1,1,7,1,0,1,56,151,242,8,1205,15.8,53,18
-~software/how-medusajs-solves-e-commerce-pain-points,1,57,3328,1,1,9,1,0,1,52,156,254,0,1136,16.8,13,4
-~software/top-medusa-js-features,1,54,1469,1,1,8,1,0,1,50,112,235,4,1981,12.9,16,6
-~software/reasons-to-choose-medusa-js-advantages-and-benefits,1,57,3897,1,1,11,1,0,1,61,155,260,3,569,13.2,0,
-~software/best-practices-of-strapi-plugins,1,56,2064,1,1,28,1,0,1,90,163,249,0,480,17,0,
-~software/strapi-vs-drupal-2,1,50,2133,1,1,22,1,0,1,54,102,244,10,858,8.7,25,28
-~software/strapi-vs-ghost-2,1,58,1842,1,1,23,1,0,1,78,155,242,10,1334,7.2,25,24
-~software/mastering-agile-frameworks,1,56,7137,1,0,42,1,0,1,56,131,283,3,5371,24.2,27,3
-~ecommerce/ecommerce-platforms-b2b-d2c,1,56,7548,1,1,58,3,0,1,46,143,291,0,2370,23.4,16,4
-~ecommerce/ecommerce-in-indonesia,1,60,6001,1,1,41,3,0,1,50,142,282,2,8458,20.9,12,19
-~ecommerce/ecommerce-in-malaysia,1,62,6345,1,1,37,1,0,1,58,146,277,2,2317,43.4,52,17
-~software/software-development-standards,1,58,1696,1,0,18,3,0,1,59,106,232,1,1464,39.1,0,
-~software/software-development-process-2,1,0,0,0,0,0,0,0,0,0,0,0,0,167,36.8,0,
-~software/scope-of-mobile-app-development,1,60,3060,1,0,31,5,0,1,54,132,246,29,1866,49.5,54,27
-~technologies/ai-chatbots-for-startups,1,64,1598,1,0,20,3,0,1,55,129,232,0,119,26.9,0,
-~ui-ux/software-design-visuals-and-usability,1,66,2055,1,0,27,4,0,1,59,135,239,2,1514,19,0,
-~ecommerce/e-commerce-platform-online-store,1,57,2080,1,0,23,4,1,1,59,102,236,0,395,65.8,0,
-~technologies/serverless-architecture,1,64,2162,1,0,24,2,0,1,60,150,236,1,830,26.8,0,
-~technologies/passwordless-authentication,1,65,2250,1,0,20,3,0,1,59,146,237,0,618,31.7,0,
-~software/security-in-software-development,1,68,2208,1,0,40,3,0,1,50,107,239,2,1149,38.7,0,
-~software/optimizing-software-performance,1,62,1921,1,0,27,4,0,1,54,135,236,1,6337,27.5,23,7
-~technologies/3-step-guide-for-singpass-integration,1,57,1714,1,0,16,10,0,1,38,154,242,4,2636,23.4,28,38
-,0,59,778,1,0,16,49,38,1,59,196,321,199,5194,5.5,1806,23
-above-diamond-ecommerce,3,63,625,1,0,1,17,16,0,58,184,256,0,0,,18,64
-ecommerce-solutions,3,63,395,1,0,3,20,20,1,30,30,242,0,0,,0,
-startup-solutions,3,84,335,1,0,3,20,20,1,28,28,238,1,87,7.9,0,
-ai-solutions,3,59,367,1,0,3,20,20,1,23,23,248,0,0,,0,
-sme-solutions,3,58,314,1,0,3,20,20,1,24,24,249,0,0,,0,
-fintech-software-development,3,60,698,1,0,2,15,15,0,39,144,280,0,58,25,0,
-strapi-js-development-services,3,60,498,1,0,4,27,20,0,32,139,279,0,69,49.3,0,
-blog,3,62,185,1,0,35,13,0,1,51,133,226,0,370,8.3,138,45
-usecases,3,66,170,1,0,17,3,3,1,47,143,210,0,171,12.9,0,
-custom-ecommerce-development,3,56,754,1,0,2,30,30,0,39,124,333,0,287,7.5,0,
-technologies,3,60,567,1,0,2,24,24,0,50,141,271,1,201,8.9,0,
-e-books,3,64,140,1,0,2,4,4,1,50,144,208,0,134,10.6,0,
-ui-ux-design-services,3,66,339,1,0,4,29,22,0,23,132,275,0,65,34.2,0,
-shopify-development-services,3,68,984,1,0,4,22,15,0,30,30,294,0,0,,0,
-sanity-development-services,3,69,649,1,0,4,22,15,0,29,29,286,0,780,23.9,0,
-ruby-on-rails-development-services,3,61,529,1,0,4,28,21,0,36,133,280,0,56,39,0,
-react-native-development-services,3,62,509,1,0,4,27,20,0,35,35,278,0,0,,0,
-react-js-development-services,3,68,487,1,0,4,28,21,0,31,150,279,0,0,,0,
-software-product-discovery,3,64,503,1,0,4,23,16,0,28,143,271,0,63,20.5,0,
-professional-node-js-development-services,3,76,490,1,0,4,28,21,0,30,30,280,0,0,,0,
-medusa-js-development-services,3,75,483,1,0,4,27,20,0,32,134,277,1,819,25.7,0,
-hydrogen-development-services,3,64,639,1,0,4,21,14,0,31,31,274,0,524,33.1,0,
-d2c-ecommerce-development-services,3,57,582,1,0,4,29,22,0,36,138,293,0,1175,25,0,
-cms-development-services,3,61,467,1,0,4,27,20,0,26,143,280,0,0,,0,
-b2c-ecommerce-development-services,3,61,581,1,0,4,29,22,0,36,130,293,0,584,22.8,12,1
-b2b-ecommerce-development-services,3,65,561,1,0,4,29,22,0,36,142,293,0,72,28.9,0,
-mvp-development,3,64,612,1,0,4,32,21,0,26,138,289,0,76,17.5,0,
-mobile-development,3,67,635,1,0,4,32,21,0,33,133,290,0,169,12.4,0,
-web-development,3,56,659,1,0,4,32,21,0,30,139,297,0,55,14.1,0,
-ai-consulting-services,3,60,363,1,0,3,17,10,0,33,130,245,0,103,14.6,0,
-generative-ai-development,3,60,481,1,0,3,16,9,0,36,134,258,0,67,15.7,0,
-data-analytics-services,3,58,425,1,0,3,21,14,0,34,135,257,0,0,,0,
-machine-learning-model-engineering,3,61,395,1,0,3,23,16,0,45,129,254,0,130,30.7,0,
-computer-vision-development,3,57,410,1,0,3,18,11,0,38,128,255,0,0,,0,
-how-we-work,3,54,493,1,0,1,31,20,1,48,134,263,1,87,12.7,15,18
-cerebro-ai-driven-crypto,3,61,521,1,0,2,16,16,0,37,121,252,3,1486,7.4,16,79
-paint-manufacturing,3,63,509,1,0,2,13,13,0,30,133,245,0,0,,0,
-woocommerce-development,3,66,206,1,0,2,7,0,0,34,154,219,0,0,,0,
-wordpress-development,3,60,204,1,0,2,7,0,0,32,154,219,0,0,,0,
-generative-ai-integration,3,68,544,1,0,3,16,9,0,36,131,279,0,203,24.7,0,
-careers,3,56,66,1,0,1,29,29,0,42,135,207,16,828,8.3,27,8
-ai-driven-software-development,3,61,555,1,0,0,0,0,0,44,145,266,0,0,,0,
-company,3,55,408,1,0,3,26,26,4,47,144,250,1,602,7.3,47,10
-contact,3,60,22,1,0,0,16,16,1,32,137,207,0,235,6.2,30,12
-payload-cms-development,3,63,275,1,0,2,7,0,0,34,139,225,4,481,22.3,0,
-eyeset-mobile-application,3,66,649,1,0,1,4,4,0,38,119,237,0,1374,6.2,0,
-delivery-framework,3,63,459,1,0,0,0,0,0,42,145,244,2,213,18.3,0,
-testimonials,6,57,344,1,0,3,18,5,0,46,139,303,0,0,,0,
-showcases,5,56,68,1,0,12,0,0,0,60,137,202,0,0,,0,
-case-studies,3,56,64,1,0,8,8,8,1,52,139,202,1,153,7.3,0,
-guides,3,55,261,1,0,4,8,8,1,64,140,233,0,549,11.3,0,
-manufacturing,3,61,510,1,0,2,24,24,0,45,144,259,0,105,8.4,0,
-elixir-phoenix-development,3,58,406,1,0,2,26,19,0,39,145,256,0,212,18.6,0,
-nest-js-development,3,56,207,1,0,2,7,0,0,30,138,221,0,0,,0,
-generative-ai-consulting,3,55,329,1,0,3,16,9,0,35,144,236,0,0,,0,
-ai-poc-development,3,53,460,1,0,3,17,10,0,29,131,251,0,0,,0,
-machine-learning-development-services,3,60,412,1,0,3,23,16,0,48,138,258,0,0,,0,
-ai-development-services,3,52,426,1,0,3,17,10,0,34,138,259,0,0,,0,
-ai-chatbot-development,3,62,441,1,0,3,17,10,0,33,138,261,0,0,,0,
-habbit-sg,3,64,321,1,0,1,0,0,0,34,13,225,0,65,8.5,0,
-wawasan-dengkil-order-management-platform,3,65,545,1,0,4,13,13,0,54,54,265,0,0,,0,
-videos,3,61,10,1,0,0,1,1,1,17,54,189,0,57,6.9,0,
-privacy,3,55,2387,1,0,3,0,0,1,25,154,212,1,122,6,14,9
-home-2,3,106,778,1,0,16,49,38,1,59,196,321,0,0,,0,
-ai-agent-development,3,61,403,1,0,3,17,10,0,31,31,256,0,0,,0,
-ai-copilot-development,3,63,533,1,0,3,16,9,0,33,33,272,0,0,,0,
-next-js-development,3,62,425,1,0,2,21,14,0,30,30,246,0,0,,0,
-elementor-45,3,58,0,1,0,0,0,0,0,38,0,187,0,0,,0,
-sample-page,3,56,155,1,0,1,0,0,0,36,154,191,0,0,,0,
-~showcase/ring-configurator,5,58,19,0,0,4,0,0,0,42,105,187,0,0,,0,
-~showcase/wordpress-%e2%86%92-payload-cms-migration,5,60,19,0,0,4,0,0,0,58,100,187,0,0,,0,
-~testimonial/paint-manufacturer,6,52,18,0,0,0,0,0,0,43,114,186,0,0,,0,
-~testimonial/wawasan-dengkil,6,59,15,0,0,0,0,0,0,40,131,186,0,0,,0,
-~testimonial/eyeset,6,61,19,0,0,0,0,0,0,31,133,186,0,0,,0,
-~testimonial/cerebro,6,54,21,0,0,0,0,0,0,32,136,186,0,0,,0,
-~testimonial/above,6,50,22,0,0,0,0,0,0,30,145,186,0,0,,0,
-usecase/ai-driven-crypto-investment-recommendations,4,52,5531,0,0,10,6,0,1,54,159,256,0,84,12.2,0,
-usecase/ai-for-manufacturing,4,52,5237,0,0,6,5,0,1,46,158,251,0,101,16.9,0,
-usecase/ai-solutions-for-retail-ecommerce,4,62,5497,0,0,6,6,0,1,45,156,252,0,78,17.3,0,
-~product-development,1,54,66,1,0,15,5,0,1,44,0,206,0,0,,0,
-~software,1,60,110,1,0,34,10,0,1,33,0,218,0,182,7.2,78,0
-~ui-ux,1,54,117,1,0,31,10,0,1,30,0,217,0,61,13.7,0,
-~technologies,1,56,101,1,0,30,10,0,1,37,0,217,0,105,8,0,
-~ecommerce,1,57,110,1,0,30,10,0,1,35,0,217,0,0,,97,1
-~ai,1,60,42,1,0,12,4,0,1,27,0,203,0,0,,0,
-~industry/ecommerce,1,58,24,1,0,1,0,0,1,34,0,188,0,0,,0,
-~industry/fintech,1,58,23,1,0,1,0,0,1,32,0,188,0,0,,0,
-~industry/mobility,1,57,21,1,0,1,0,0,1,33,0,188,0,0,,0,
-~industry/operations,1,58,18,1,0,1,0,0,1,35,0,188,0,0,,0,
-~industry/manufacturing,1,58,21,1,0,1,0,0,1,38,0,188,0,0,,0,
-~service/headless-commerce,1,57,25,1,0,1,0,0,1,42,0,188,0,0,,0,
-~service/ai-ml,1,55,25,1,0,1,0,0,1,32,0,188,0,0,,0,
-~service/mobile-backend,1,56,23,1,0,1,0,0,1,41,0,188,0,0,,0,
-~service/web-mobile,1,56,20,1,0,1,0,0,1,37,0,188,0,0,,0,
-~service/mes-lite-platform,1,55,22,1,0,1,0,0,1,42,0,188,0,0,,0,
-~showcase-category/ecommerce,1,57,16,1,0,1,0,0,1,34,0,188,0,0,,0,
-~showcase-category/cms-migration,1,53,20,1,0,1,0,0,1,38,0,188,0,0,,0,
-utype/insight,3,61,183,1,0,6,3,3,1,32,0,191,0,0,,0,`;
+var RAW = `~software/strapi-vs-drupal,1,140,2133,1,1,22,1,0,1,54,102,248,0,0,,0,
+~ecommerce/medusa-js-vs-shopify-marketplace,1,144,1804,1,1,11,4,0,1,48,140,240,0,0,,0,
+~ecommerce/medusa-js-multi-vendor-architecture,1,70,1514,1,1,9,4,0,1,50,148,237,2,96,10.2,0,
+~ecommerce/is-medusa-js-right-for-your-marketplace,1,145,1514,1,1,11,4,0,1,47,151,237,0,0,,0,
+~ecommerce/build-a-marketplace-in-singapore,1,142,1942,1,0,9,4,0,1,60,139,238,0,0,,16,21
+~software/disadvantages-of-medusa-js,1,71,2838,1,1,14,1,0,1,89,155,252,69,8574,10.5,102,53
+~ecommerce/medusa-js-marketplace,1,73,1458,1,1,10,4,0,1,49,146,237,2,646,13.5,0,
+~ecommerce/marketplace-platform-limitations,1,147,1777,1,0,6,5,4,1,82,146,236,0,0,,14,4
+~ecommerce/ecommerce-erp-integration,1,149,3040,1,0,6,5,4,1,54,149,245,0,0,,0,
+~ecommerce/custom-marketplace-development,1,68,2240,1,1,10,4,0,1,58,159,243,1,265,27.5,0,
+~ecommerce/custom-ecommerce-platform-development-for-growth,1,68,2904,1,0,15,6,2,1,73,154,246,0,0,,0,
+~software/modernizing-software-for-quality-control,1,143,1005,1,0,6,4,3,1,63,141,230,0,0,,0,
+~software/predictability-in-software-engineering,1,143,955,1,0,6,5,1,1,87,141,231,1,74,8.2,0,
+~software/software-development-project-management,1,106,3032,1,1,66,16,1,1,57,113,264,0,637,30.4,0,
+~software/avoiding-software-project-failure,1,72,1533,1,0,6,5,1,1,57,123,235,0,63,11.5,0,
+~software/web-development-jobs,1,102,1528,1,0,42,6,1,1,42,136,241,0,75,29.4,0,
+~software/optimize-web-app-with-webassembly,1,104,2851,1,0,24,12,1,1,52,139,253,0,1865,17.2,19,2
+~software/top-strapi-development-companies,1,104,2677,1,0,37,15,13,1,53,107,257,0,1376,25.4,0,
+~technologies/multi-factor-authentication,1,104,2621,1,0,19,3,1,1,50,150,242,0,152,71.1,0,
+~ecommerce/medusa-b2b-ecommerce-platform,1,108,2477,1,0,15,6,3,1,74,126,242,0,0,,17,14
+~ecommerce/medusa-approval-workflows,1,110,2466,1,0,18,6,1,1,82,128,241,0,0,,0,
+~ecommerce/ecommerce-inventory-management-integration,1,109,1950,1,0,6,3,2,1,108,144,237,0,0,,14,5
+~ecommerce/multi-warehouse-ecommerce-inventory,1,108,1737,1,0,6,5,4,1,87,237,237,1,64,7.8,0,
+~ecommerce/ecommerce-website-building,1,122,7287,1,0,57,4,0,1,54,146,293,0,221,22.2,0,
+~technologies/technologies-web-development,1,111,3889,1,0,53,6,2,1,43,144,263,0,191,72.3,0,
+~ecommerce/7-signs-youre-ready-for-a-custom-e-commerce-platform,1,113,3938,1,0,22,1,0,1,78,145,250,0,180,13.2,0,
+~software/top-mobile-app-development-companies-in-vietnam,1,112,2254,1,0,22,14,0,1,52,139,247,1,2050,31.7,0,
+~ui-ux/role-information-architecture,1,108,2084,1,0,18,4,1,1,36,111,237,3,269,23,0,
+~software/api-security-andauthentication,1,114,2151,1,1,32,1,0,1,60,145,247,0,699,41.6,0,
+~software/singapores-tech-workforce,1,112,1782,1,0,26,6,0,1,91,114,241,2,1291,57.4,13,0
+~ecommerce/building-ecommerce-systems,1,114,2702,1,0,7,1,0,1,43,130,246,0,0,,0,
+~ui-ux/ux-design-trends,1,109,2181,1,0,25,4,1,1,57,134,242,0,0,,0,
+~software/user-adoption-strategies,1,109,1594,1,0,33,8,0,1,60,152,241,1,953,49.8,0,
+~technologies/low-code-no-code,1,111,1770,1,0,32,2,0,1,58,102,239,0,0,,0,
+~ecommerce/medusa-marketplace-architecture,1,71,2488,1,0,18,6,0,1,55,156,241,1,293,16.9,0,
+~ecommerce/medusa-erp-integration-for-scalable-b2b-commerce,1,109,2492,1,0,16,6,0,1,48,152,241,0,0,,0,
+~ecommerce/medusa-b2b-pricing-open-source-engine-for-complex-deals,1,71,2542,1,0,18,6,0,1,81,153,242,0,0,,18,3
+~ai/ai-consulting-services-for-modern-enterprises,1,112,1869,1,0,10,7,0,1,68,142,239,0,112,27.2,0,
+~ai/generative-ai-in-the-integration,1,109,1592,1,0,9,6,0,1,67,190,237,1,197,10.2,12,0
+~ai/production-ai-development-from-prototype-to-scale,1,71,2610,1,0,18,6,0,1,75,158,244,0,0,,0,
+~ai/why-ai-fails-in-production,1,107,2552,1,0,11,6,3,1,51,158,242,0,0,,0,
+~technologies/headless-commerce-risks-costs-complexity-and-tradeoffs,1,112,2623,1,0,14,5,1,1,82,150,244,0,0,,0,
+~technologies/rewrite-vs-refactor-legacy-system,1,107,2419,1,0,16,6,0,1,74,97,241,0,0,,14,0
+~technologies/software-product-discovery,1,112,2017,1,0,15,6,5,1,48,164,239,0,74,7.5,0,
+~ecommerce/dc2-ecommerce-trends,1,108,2838,1,0,12,4,0,1,73,164,244,9,369,12.8,32,10
+~technologies/machine-learning-consulting-companies,1,77,1767,1,0,14,5,0,1,49,179,237,1,3832,33.5,0,
+~product-development/mobile-app-development-singapore,1,116,1693,1,0,10,5,0,1,49,129,237,1,88,7.1,0,
+~ecommerce/ecommerce-web-development-singapore,1,118,1930,1,0,6,7,1,1,58,128,239,0,3596,16.1,0,
+~software/mvp-software-development-services,1,110,1901,1,0,6,5,0,1,57,163,238,2,2265,10.5,0,
+~ecommerce/headless-b2b-ecommerce-development,1,109,1506,1,0,6,5,0,1,53,144,238,0,56,7,0,
+~software/risk-management-in-software-development,1,116,2388,1,0,42,12,0,1,47,158,254,12,15081,25.4,20,2
+~software/user-centric-web-experiences-for-singapore-companies,1,66,1801,1,0,22,8,0,1,62,157,243,0,127,31.4,0,
+~software/mobile-app-trends-singapore,1,115,1837,1,0,37,10,0,1,39,158,244,0,305,17.8,0,
+~software/gain-a-competitive-advantage-with-custom-software-development,1,111,1598,1,0,33,13,0,1,86,156,243,0,161,14.9,0,
+~software/top-web-development-frameworks-in-singapore,1,116,1645,1,0,33,18,0,1,48,155,246,1,93,20.6,0,
+~software/troubleshooting-and-bug-fixes,1,108,1715,1,0,30,9,0,1,58,135,244,0,431,17.1,0,
+~software/front-end-development-in-singapore,1,112,2133,1,0,45,16,0,1,62,154,254,0,172,23,0,
+~software/front-end-development-in-singapore-2,1,110,2136,1,0,45,16,0,1,62,154,254,0,0,,0,
+~software/tech-careers-in-singapore,1,112,1891,1,0,51,10,0,1,60,157,247,0,64,50,0,
+~software/vietnam-destination-for-software-development,1,72,2104,1,0,40,12,0,1,61,143,250,2,2561,12,0,
+~software/digital-transformation-strategies,1,110,2210,1,0,49,12,0,1,55,155,250,1,2102,25,0,
+~software/developer-portfolio-guide-for-singapore-tech-professionals,1,112,1980,1,0,27,12,0,1,60,125,247,0,417,21.3,13,4
+~software/top-backend-technologies-guide-for-singapore-companies,1,108,2842,1,0,43,17,0,1,70,144,261,0,236,23.3,0,
+~ui-ux/ux-design-trends-in-singapore,1,105,1663,1,0,43,9,0,1,53,138,244,0,63,39.3,0,
+~software/local-seo-boost-singapore-tech-business,1,111,2421,1,0,21,12,0,1,53,149,249,0,0,,0,
+~software/custom-software-development-for-the-retail-industry,1,112,1969,1,0,36,11,0,1,79,156,249,0,9099,74.9,0,
+~software/software-engineering-education-in-singapore,1,112,2074,1,0,23,9,0,1,58,152,246,2,196,31.8,16,0
+~software/training-and-support-after-software-implementation,1,112,1957,1,0,34,8,0,1,58,150,244,1,2231,26.3,0,
+~software/startup-funding-in-singapore,1,113,2259,1,0,32,12,0,1,74,153,254,1,4455,48.9,0,
+~software/vietnam-destinations-cost-effective-outsourcing,1,112,1551,1,0,24,6,0,1,93,109,241,1,976,26,0,
+~software/cybersecurity-challenges-in-singapore,1,114,1706,1,0,20,7,0,1,70,105,241,0,71,26.5,19,0
+~software/government-support-for-software-development-in-vietnam,1,108,1417,1,0,28,6,0,1,59,89,240,2,362,28,0,
+~software/blockchain-and-cryptocurrency-in-2024-singapores-tech-industry,1,118,1797,1,0,22,8,0,1,78,146,243,0,0,,0,
+~technologies/navigating-cloud-computing-essential-solutions-for-singapores-tech-innovators,1,110,1925,1,0,35,10,0,1,104,154,246,0,77,65,0,
+~software/benefits-and-risks-integrating-ai-and-ml,1,115,2115,1,0,47,13,0,1,61,140,251,0,0,,0,
+~software/web-development-data-privacy,1,69,2156,1,0,16,8,0,1,51,121,245,5,1836,29.2,23,0
+~software/mastering-web-development,1,109,4015,1,0,94,12,0,1,125,157,281,0,610,31.8,14,1
+~software/top-project-management-tools,1,108,2559,1,0,43,7,0,1,87,156,255,0,1629,22.7,0,
+~software/singapores-tech-talent,1,113,2778,1,0,27,7,0,1,57,110,251,0,4700,18.8,0,
+~technologies/tech-trends-in-singapore,1,107,1930,1,0,36,9,0,1,46,112,249,1,3328,55.8,0,
+~software/ai-and-ml-software-development,1,73,2498,1,0,38,11,0,1,86,143,251,0,1429,21.5,0,
+~software/singapores-startup-ecosystem,1,111,2526,1,0,39,10,0,1,56,128,254,0,344,41,0,
+~software/off-the-shelf-solutions,1,110,1870,1,0,25,5,0,1,55,147,241,0,2741,28.4,0,
+~software/app-modernization-services-in-vietnam,1,112,2282,1,0,44,22,0,1,113,153,256,0,190,13.9,0,
+~software/affordable-tech-solutions-singapore,1,111,2556,1,0,24,19,0,1,69,123,254,0,81,10.9,0,
+~software/system-integration,1,115,1491,1,0,29,5,0,1,59,117,239,5,5868,56.2,17,4
+~software/choose-right-development-team,1,73,3025,1,0,34,6,0,2,58,176,254,1,60,16.7,13,1
+~software/software-development-partner,1,111,2769,1,0,44,8,0,1,84,109,252,0,1836,21.5,0,
+~software/javascript-frameworks-trends-dominance-emerging-contenders,1,104,1437,1,0,26,5,0,1,59,122,239,0,209,35.4,15,0
+~software/low-code-no-code-web-development,1,71,1611,1,0,42,5,0,1,54,146,242,0,233,32.6,0,
+~software/headless-cms-web-development,1,72,1698,1,0,32,7,0,1,60,138,243,0,491,39,13,0
+~software/ai-in-web-development,1,150,1464,1,0,34,7,0,1,57,128,241,0,0,,0,
+~software/headless-commerce-development,1,147,1455,1,0,26,6,0,1,59,134,239,0,0,,0,
+~software/developer-upskilling-programs-singapore,1,153,1595,1,0,17,8,0,1,47,140,239,0,0,,0,
+~software/government-grants-for-small-businesses-singapore,1,142,1499,1,0,21,8,0,1,56,154,241,0,5955,63.2,0,
+~software/affordable-web-design-ux-in-singapore,1,150,1643,1,0,22,9,0,1,44,133,238,0,399,47.2,0,
+~software/version-control-and-collaboration-in-web-development,1,75,2207,1,0,27,10,0,1,57,156,245,1,7913,16.7,18,35
+~software/choosing-the-right-it-company-in-singapore,1,145,4688,1,0,79,7,0,1,54,156,278,0,63,24.8,0,
+~software/estimate-development-time,1,70,2432,1,0,32,6,0,1,72,125,247,23,9881,26.6,65,20
+~software/web3-dapp,1,142,2331,1,0,20,9,0,1,60,122,247,1,619,28.8,13,2
+~software/custom-software-development-process,1,148,2891,1,0,62,9,0,1,60,121,256,2,9782,25.6,0,
+~software/ensuring-digital-transformation-strategy-adapts-to-technological-advancements,1,105,2295,1,0,24,9,0,1,82,148,247,1,888,17.7,14,0
+~software/cost-of-software-development-in-vietnam,1,67,2684,1,0,16,10,0,1,56,134,247,1,3077,14.5,0,
+~software/software-scalability,1,70,2929,1,0,37,10,0,1,48,106,254,3,38853,12.8,19,10
+~software/web-design-and-development,1,72,2555,1,0,27,9,0,1,51,133,251,2,20702,22.4,0,
+~software/data-privacy-regulations,1,110,2475,1,0,25,10,0,1,53,135,247,10,2030,28,28,9
+~software/back-end-development-serverless-architectures-and-cloud-functions,1,109,2816,1,0,24,11,0,1,69,125,252,0,940,23.7,0,
+~software/custom-development-services-for-strapi,1,106,2010,1,0,37,4,0,1,59,128,246,0,2234,27.2,0,
+~software/types-of-strapi-custom-development-services,1,104,2869,1,0,44,5,0,1,53,134,254,0,0,,0,
+~software/case-studies-of-custom-development-projects-with-strapi,1,107,2579,1,0,23,14,0,1,59,77,249,6,997,10.7,17,20
+~software/strapi-custom-development-services,1,118,2013,1,0,27,6,0,1,80,156,242,0,443,48.1,0,
+~software/select-top-custom-development-services-for-strapi,1,111,1348,1,0,22,5,0,1,57,164,237,0,310,15.7,0,
+~software/exploring-strapi-plugins,1,112,1529,1,0,10,2,0,1,86,160,237,0,437,20.7,0,
+~software/protecting-data-and-systems,1,110,2158,1,0,29,9,0,1,59,147,246,0,58,33.7,0,
+~software/software-development-and-digital-transformation-budget-roadmap,1,114,2816,1,0,35,12,0,1,57,115,257,0,2993,24.6,0,
+~software/seo-for-single-page-applications,1,125,2529,1,0,27,9,0,1,61,147,248,0,37565,33.7,18,3
+~software/progressive-enhancement-and-inclusive-design,1,117,3314,1,0,35,14,0,1,57,143,255,0,467,18.4,0,
+~software/testing-frameworks-continuous-integration,1,110,2218,1,0,25,10,0,1,57,145,248,0,109,23.3,0,
+~software/features-of-custom-software,1,79,2134,1,0,36,8,0,1,53,141,246,2,3836,73.5,14,0
+~software/leverage-digital-transformation,1,119,2478,1,0,36,7,0,1,55,152,253,0,0,,0,
+~software/business-strategy-and-goals,1,86,2693,1,0,44,7,0,1,54,105,255,5,6009,19.6,20,14
+~software/pwas-vs-native-apps,1,107,2265,1,0,25,7,0,1,86,136,246,2,709,43.8,13,3
+~software/software-development-cost,1,105,2418,1,0,37,9,1,1,103,116,250,0,1406,78.5,0,
+~software/task-runners-and-build-automation-tools,1,109,2269,1,0,25,6,0,1,42,115,246,2,1633,16.7,16,0
+~software/ongoing-maintenance-and-subscription-fees,1,68,3108,1,0,26,13,0,1,58,119,256,8,6375,34.9,39,16
+~software/cdns-content-delivery-networks,1,106,2465,1,0,20,9,0,1,58,149,247,0,2152,17,0,
+~software/backend-development-and-apis,1,69,2706,1,0,36,11,0,1,58,122,250,11,6364,17.9,33,10
+~software/roi-in-software-development,1,112,2468,1,0,37,10,0,1,47,118,248,3,3846,21.5,16,1
+~ecommerce/what-is-ecommerce,1,111,5808,1,0,53,18,0,1,53,112,279,0,6508,25.4,24,5
+~software/outsource-web-development-services,1,108,3286,1,0,57,12,0,1,55,141,261,0,0,,0,
+~software/12-agile-principles,1,108,2563,1,0,38,14,0,1,49,132,256,6,14284,27.6,31,21
+~software/security-concerns-in-mobile-app-development,1,107,2178,1,0,28,12,0,1,80,120,245,2,1312,56.5,19,22
+~software/what-is-agile-methodology,1,108,2618,1,0,30,8,0,1,53,128,249,0,0,,0,
+~software/ai-in-software-development,1,105,6263,1,0,61,2,0,1,48,126,283,3,1885,37.3,23,25
+~software/agile-vs-waterfall,1,98,4326,1,0,26,2,0,1,56,139,265,1,1916,34.9,15,3
+~ecommerce/b2b-ecommerce,1,107,5133,1,0,28,7,3,1,62,134,269,3,8514,23.2,26,5
+~ecommerce/ecommerce-in-japan,1,117,7563,1,0,38,3,0,1,56,138,292,2,4135,50.5,16,38
+~ecommerce/ecommerce-in-philippines,1,61,7181,1,0,47,4,0,1,59,137,288,4,2352,34.4,37,19
+~ecommerce/ecommerce-in-vietnam,1,109,7992,1,0,38,4,0,1,58,148,296,1,125,22,0,
+~ecommerce/ecommerce-enablers,1,111,6980,1,0,67,3,0,1,47,141,293,9,3130,29,31,17
+~ecommerce/ecommerce-marketing,1,72,8176,1,0,39,3,0,1,56,107,294,3,21960,68.1,22,2
+~ecommerce/e-commerce-for-services,1,107,5571,1,0,37,4,0,1,59,135,272,1,2397,16,0,
+~software/strapi-development-company,1,108,2207,1,0,37,6,0,1,48,157,249,0,503,29.3,0,
+~software/cost-of-hiring-a-strapi-development-company,1,66,2332,1,0,22,3,0,1,51,161,246,0,163,28.9,0,
+~software/find-the-best-strapi-development-company,1,106,1871,1,0,45,4,0,1,56,142,243,0,263,41.9,0,
+~software/customization-in-medusa-js,1,69,1937,1,1,8,1,0,1,55,155,248,5,1334,16.4,0,
+~ecommerce/ecommerce-strategy,1,116,9352,1,0,44,3,0,1,60,134,313,1,9566,34,13,5
+~software/managing-offshore-software-teams,1,108,3316,1,0,39,10,0,1,99,150,259,0,2369,39.6,0,
+~software/microservices-vs-monolithic,1,103,2280,1,0,26,9,0,1,58,144,248,0,723,26.5,23,0
+~software/agile-case-studies,1,75,4041,1,0,38,14,0,1,49,136,273,231,23364,15.7,468,40
+~software/4-agile-core-values,1,107,1841,1,1,32,6,0,1,58,149,245,0,1903,29.2,0,
+~software/agile-software-development,1,107,1502,1,1,33,5,0,1,56,141,244,3,5272,27.1,30,2
+~ecommerce/ecommerce-trends,1,110,7640,1,1,40,3,0,1,57,143,291,0,103,31.1,0,
+~ecommerce/type-of-ecommerce,1,110,8660,1,1,33,8,4,1,43,146,303,0,1746,28.1,0,
+~technologies/headless-ecommerce,1,104,1997,1,0,26,2,0,1,43,130,240,0,0,,0,
+~software/software-quality-non-technical-ceo,1,61,2364,1,0,23,4,0,1,57,145,243,0,82,21.5,0,
+~software/high-quality-software,1,106,1445,1,0,21,2,0,1,60,114,234,0,0,,0,
+~technologies/production-ai-vs-prototype-ai-why-most-systems-fail-after-the-demo,1,110,3239,1,0,19,4,0,1,92,143,247,1,202,11.2,0,
+~ecommerce/mobile-first-ux-for-sea-e-commerce-2,1,105,1822,1,0,7,1,0,1,86,156,236,0,0,,0,
+~software/top-strapi-plugins,1,110,3280,1,1,22,1,0,1,86,115,259,13,2364,12.4,25,51
+~software/strapi-vs-joomla-2,1,105,1787,1,1,11,1,0,1,45,101,243,0,132,13.9,0,
+~technologies/deploying-ai,1,69,3356,1,0,22,6,4,1,47,153,250,0,0,,0,
+~software/7-signs-your-sme-needs-custom-software-instead-of-more-saas-tools,1,112,2571,1,0,7,1,0,1,71,155,242,0,50,23.1,0,
+~ui-ux/mobile-first-ux-for-sea-e-commerce,1,107,2241,1,0,9,2,0,1,56,123,240,0,126,10.2,0,
+~technologies/vibe-coding,1,108,2837,1,0,6,1,0,1,56,156,241,0,0,,0,
+~ecommerce/b2b-workflows,1,107,2448,1,0,7,1,0,1,66,113,242,0,88,15,0,
+~ecommerce/software-cost-estimation,1,112,3312,1,0,6,5,0,1,58,132,249,1,756,37.4,0,
+~ecommerce/e-commerce-in-asia,1,65,8433,1,1,49,3,0,1,58,145,303,0,299,39.4,33,21
+~ecommerce/ecommerce-in-singapore,1,108,7590,1,1,47,3,0,1,53,127,295,4,6735,25.8,18,4
+~ecommerce/ecommerce-in-china,1,112,8108,1,1,22,3,0,1,53,145,296,1,10275,44.6,54,10
+~ecommerce/ecommerce-in-india,1,71,7966,1,1,18,3,0,1,54,145,293,2,2512,48.8,0,
+~ecommerce/ecommerce-business,1,109,6641,1,1,22,4,0,1,60,118,281,0,0,,0,
+~ecommerce/ecommerce-logistic,1,107,9293,1,1,32,7,3,1,58,108,311,0,1416,58.9,12,3
+~software/it-companies-in-singapore,1,110,3548,1,0,61,22,0,1,57,110,273,0,4987,56.9,0,
+~software/digital-transformation-strategies-for-singaporean-enterprises,1,108,2988,1,0,30,12,0,1,98,157,257,0,158,60.4,0,
+~software/web-development-in-singapore,1,105,3096,1,0,31,12,0,1,109,152,254,0,110,24.9,0,
+~software/choosing-the-right-app-development-company-for-smes-in-singapore,1,106,2535,1,0,53,11,0,1,89,158,255,0,89,21.1,0,
+~software/mobile-first-development,1,110,1911,1,0,31,10,0,1,56,156,243,0,82,24.8,0,
+~software/vietnams-software-development-industry,1,111,1992,1,0,43,11,0,1,47,128,248,1,533,61.3,14,14
+~software/creating-accessible-software,1,108,1892,1,0,28,9,0,1,68,106,243,0,53,22.2,0,
+~software/top-web-development-companies-in-vietnam-leading-the-way-in-digital-innovation,1,142,2141,1,0,40,13,0,1,104,148,248,0,239,16.6,0,
+~software/budget-friendly-tech-solutions-for-singapore,1,150,1582,1,0,9,8,0,1,68,158,238,0,510,12.2,15,1
+~software/leading-generative-ai-development-services-providers-in-vietnam-transforming-industries-and-driving-innovation,1,148,1460,1,0,12,11,0,1,136,157,239,0,198,23.4,0,
+~software/why-choose-a-strapi-development-company,1,151,1704,1,0,32,8,0,1,51,148,242,0,1463,20.1,0,
+~software/hiring-a-strapi-development-company,1,71,1857,1,0,21,7,0,1,59,119,242,0,117,48.4,0,
+~software/benefits-of-custom-strapi-development-services,1,143,6492,1,0,69,5,0,1,54,130,291,0,65,28,0,
+~product-development/minimum-viable-product-approach-guide,1,67,2103,1,0,8,7,1,1,58,132,237,1,214,17.4,14,4
+~product-development/the-ultimate-guide-to-mvp,1,136,919,1,0,17,10,0,1,55,150,232,0,0,,0,
+~technologies/corppass-and-singpass,1,70,1012,1,0,16,8,0,1,56,152,234,4,1084,13,22,16
+~product-development/building-success-with-a-mvp,1,150,4076,1,0,28,13,0,1,52,142,266,0,0,,0,
+~product-development/product-roadmap-starup,1,141,1540,1,0,17,4,0,1,57,108,235,0,0,,0,
+~ui-ux/ux-in-product-development,1,77,2096,1,0,18,4,0,1,51,110,238,0,850,25,0,
+~ui-ux/a-digital-product-with-ux-design,1,106,1735,1,0,20,5,1,1,45,86,234,0,0,,0,
+~ui-ux/sketching-startup-product-development,1,109,1735,1,0,17,4,1,1,52,129,235,1,1149,8.3,0,
+~ui-ux/user-flow-for-startup-founder,1,101,1849,1,0,19,4,1,1,58,104,237,0,0,,0,
+~ui-ux/the-power-of-ux-wireframes,1,103,2004,1,0,20,5,1,1,57,99,237,0,297,39.4,0,
+~technologies/responsive-design,1,99,1910,1,0,17,4,1,1,52,136,236,0,465,23,0,
+~ui-ux/power-interactive-prototypes,1,103,1652,1,0,19,4,1,1,52,137,234,0,676,13.5,0,
+~technologies/exploring-headless-cms,1,62,1926,1,0,16,3,1,1,52,119,236,0,0,,0,
+~software/non-functional-requirements,1,109,1934,1,0,24,2,0,1,51,133,238,5,8813,28.3,27,11
+~software/functional-requirements,1,72,1411,1,0,27,3,0,1,58,141,234,2,3572,57.1,0,
+~software/accessibility-product-development,1,108,2038,1,0,28,4,0,1,54,133,241,0,935,33.7,0,
+~software/usability-product-development,1,107,2025,1,0,31,3,0,1,49,139,240,0,0,,0,
+~technologies/mobile-app-development,1,107,3940,1,0,26,6,0,1,49,120,259,0,0,,0,
+~ecommerce/data-driven-decision-making-leveraging-analytics-in-medusa-js,1,73,3234,1,0,6,2,1,1,87,156,251,1,466,9.2,0,
+~technologies/the-new-rules-for-a-predictable-investor-ready-mvp-in-2026,1,109,3624,1,0,6,6,0,1,84,155,253,0,0,,0,
+~technologies/legacy-system-modernization,1,106,4166,1,0,6,6,0,1,60,156,256,0,200,50.7,15,0
+~technologies/machine-learning-for-smes,1,108,2351,1,0,7,1,0,1,70,105,241,1,129,11,0,
+~ui-ux/app-design-in-2026-best-practices-trends-top-tools-for-modern-apps,1,67,1430,1,0,6,1,0,1,95,156,231,5,2790,10.4,39,18
+~ecommerce/the-hidden-costs-of-manual-b2b-workflows-for-singapore-smes,1,67,3159,1,0,6,1,0,2,84,68,249,0,102,13.2,0,
+~ecommerce/data-driven-ux-for-singapore-ecommerce,1,113,1951,1,0,7,1,0,1,38,161,238,0,62,17.8,0,
+~ecommerce/why-open-source-drives-superior-roi-for-b2b-e-commerce,1,110,2628,1,0,7,1,0,1,54,156,240,0,149,10.5,0,
+~ecommerce/use-ai-on-medusa-js-drive-sales,1,108,1421,1,0,6,1,0,1,47,135,230,1,292,12.5,0,
+~ecommerce/singapore-b2b-e-commerce-in-q4,1,112,2739,1,0,6,1,0,1,117,157,244,0,108,15.2,0,
+~ecommerce/singapore-b2b-ai-integrationn,1,105,2497,1,0,6,1,0,1,28,165,240,2,113,12,0,
+~ecommerce/medusa-js-vs-shopify-plus-for-b2b-in-singapore,1,123,2367,1,0,7,1,0,1,46,138,244,0,276,12.7,0,
+~ecommerce/b2b-ecommerce-for-singapore,1,124,1957,1,0,6,1,0,1,59,151,234,0,0,,0,
+~ecommerce/singapore-ecommerce-compliance-taxes-data-and-rules,1,108,3231,1,0,6,1,0,1,53,140,244,1,200,40.8,0,
+~ecommerce/medusa-js-ecommerce-maintenance-checklist,1,112,570,1,0,6,1,0,1,100,142,227,0,0,,0,
+~ecommerce/ecommerce-tech-stack-medusa,1,113,972,1,0,6,1,0,1,51,153,235,1,193,10.9,0,
+~ecommerce/quote-based-ordering-in-b2b,1,77,4841,1,0,6,1,0,1,93,240,269,3,4493,13.5,15,9
+~ecommerce/net-payment-terms-in-b2b,1,111,3004,1,0,6,1,0,1,94,157,246,0,1893,32.1,0,
+~ecommerce/price-negotiation-chat-in-b2b,1,134,2057,1,0,8,1,0,1,119,317,241,2,445,12.3,0,
+~ecommerce/b2b-subscription-ordering,1,133,2811,1,0,6,1,0,1,103,156,247,0,61,20.6,0,
+~ecommerce/request-for-quote-rfq-system,1,106,2995,1,0,14,1,0,1,114,124,249,5,2928,44.7,24,11
+~ecommerce/custom-quote-approvals-in-b2b,1,111,1953,1,0,20,1,0,1,112,154,241,0,78,7.9,15,1
+~ecommerce/flexible-business-models-with-medusa-js,1,104,1420,1,1,6,1,0,1,57,146,237,2,2306,19.7,0,
+~ecommerce/enhancing-customer-experience-in-e-commerce-with-medusa-js,1,111,1397,1,0,6,1,0,1,83,154,233,0,126,15,0,
+~ecommerce/optimizing-checkout-experiences-with-medusa-js-best-practices,1,73,1930,1,0,9,1,0,1,87,99,239,6,836,10.7,13,20
+~ecommerce/reorder-feature-for-b2b-customers,1,110,1645,1,0,20,1,0,1,89,222,241,8,1640,8.1,16,5
+~ecommerce/volume-discounts,1,69,1728,1,0,12,1,0,1,65,150,239,4,5154,24,34,4
+~ecommerce/moq-in-b2b-ecommerce,1,104,2008,1,0,16,1,0,1,107,142,242,0,0,,0,
+~ecommerce/ecommerce-customer-experience,1,111,3377,1,0,15,1,0,1,94,157,254,0,0,,0,
+~ecommerce/tiered-pricing,1,67,2605,1,0,6,1,0,1,93,154,245,2,4685,15.8,27,8
+~ecommerce/user-generated-content-in-ecommerce,1,110,1885,1,0,9,2,0,1,54,154,241,0,0,,0,
+~ecommerce/building-customer-trust-in-ecommerce,1,109,1439,1,0,15,2,1,1,36,141,236,0,57,49.7,0,
+~ecommerce/gdpr-compliance-for-ecommerce,1,109,2244,1,0,13,2,0,1,63,136,241,3,1027,27.2,20,3
+~ecommerce/customer-segmentation-and-personalization,1,73,2630,1,0,6,1,0,1,54,145,245,2,3901,16.7,15,1
+~ecommerce/ecommerce-customer-data-collection,1,108,2191,1,0,16,1,0,1,50,111,241,0,0,,0,
+~ecommerce/customer-centric-in-ecommerce,1,106,2337,1,0,7,3,0,1,103,123,242,0,223,31.9,0,
+~ecommerce/customer-accounts-and-authentication,1,108,2140,1,0,11,4,0,1,44,131,242,0,0,,0,
+~ecommerce/understanding-your-customer,1,114,1930,1,0,11,1,0,1,57,135,239,0,0,,0,
+~ecommerce/b2b-vs-b2c-customers,1,108,2704,1,0,6,1,0,1,66,132,246,0,0,,0,
+~ecommerce/boosting-e-commerce-success-marketing-strategies-for-medusa-js-stores,1,120,1710,1,0,7,1,0,1,95,156,236,3,676,9.2,0,
+~software/product-management-with-medusa-js,1,118,1560,1,1,8,1,0,1,46,149,241,4,3170,13,18,15
+~software/why-use-medusa-js-for-e-commerce,1,113,1490,1,1,8,1,0,1,58,123,240,1,823,12.2,0,
+~software/e-commerce-with-medusa-js,1,109,1700,1,1,8,1,0,1,71,136,240,0,269,22.4,0,
+~software/medusa-js-e-commerce-consumer-behavior,1,112,1374,1,1,8,1,0,1,73,148,238,1,159,12.8,0,
+~software/medusa-js-success-stories,1,123,2237,1,1,7,1,0,1,56,151,246,7,1178,16.3,53,18
+~software/how-medusajs-solves-e-commerce-pain-points,1,77,3328,1,1,9,1,0,1,52,156,258,0,1131,16.8,13,4
+~software/top-medusa-js-features,1,72,1469,1,1,8,1,0,1,50,112,239,4,1880,13.5,16,6
+~software/reasons-to-choose-medusa-js-advantages-and-benefits,1,111,3897,1,1,11,1,0,1,61,155,264,3,555,13.7,0,
+~software/best-practices-of-strapi-plugins,1,110,2064,1,1,28,1,0,1,90,163,252,0,450,18.2,0,
+~software/strapi-vs-ghost-2,1,116,1842,1,1,23,1,0,1,78,155,246,10,1305,7.3,25,24
+~software/mastering-agile-frameworks,1,117,7137,1,0,42,1,0,1,56,131,287,3,5264,24.6,27,3
+~ecommerce/ecommerce-platforms-b2b-d2c,1,111,7548,1,1,58,3,0,1,46,143,295,0,2201,22.5,16,4
+~ecommerce/ecommerce-in-indonesia,1,114,6001,1,1,41,3,0,1,50,142,286,2,7986,21.2,12,19
+~ecommerce/ecommerce-in-malaysia,1,109,6345,1,1,37,1,0,1,58,146,281,3,2243,44.7,52,17
+~software/software-development-standards,1,108,1696,1,0,18,3,0,1,59,106,236,0,1379,40.7,0,
+~software/software-development-process-2,1,-1,0,0,0,0,0,0,0,0,0,0,0,142,36,0,
+~software/scope-of-mobile-app-development,1,108,3060,1,0,31,5,0,1,54,132,250,27,1863,49.1,54,27
+~technologies/ai-chatbots-for-startups,1,105,1598,1,0,20,3,0,1,55,129,236,0,114,27.3,0,
+~ui-ux/software-design-visuals-and-usability,1,109,2055,1,0,27,4,0,1,59,135,243,2,1377,19.9,0,
+~ecommerce/e-commerce-platform-online-store,1,107,2080,1,0,23,4,1,1,59,102,240,0,410,66,0,
+~technologies/serverless-architecture,1,110,2162,1,0,24,2,0,1,60,150,240,1,832,26.4,0,
+~technologies/passwordless-authentication,1,106,2250,1,0,20,3,0,1,59,146,241,0,603,31.2,0,
+~software/security-in-software-development,1,106,2208,1,0,40,3,0,1,50,107,243,1,1154,39,0,
+~software/optimizing-software-performance,1,107,1921,1,0,27,4,0,1,54,135,240,0,6228,27.6,23,7
+~technologies/3-step-guide-for-singpass-integration,1,108,1714,1,0,16,10,0,1,38,154,246,4,2618,23.5,28,38
+,0,64,778,1,0,16,49,38,1,59,196,333,207,5216,5.6,1806,23
+~,1,65,186,1,0,35,13,0,1,51,133,238,0,399,8.5,0,
+above-diamond-ecommerce,3,69,625,1,0,1,17,16,0,58,184,260,0,0,,18,64
+ecommerce-solutions,3,148,395,1,0,3,20,20,1,30,30,246,0,0,,0,
+startup-solutions,3,141,335,1,0,3,20,20,1,28,28,242,1,90,7.8,0,
+ai-solutions,3,144,367,1,0,3,20,20,1,23,23,252,0,0,,0,
+sme-solutions,3,150,314,1,0,3,20,20,1,24,24,253,0,0,,0,
+fintech-software-development,2,71,698,1,0,2,15,15,0,39,144,284,0,62,24.1,0,
+strapi-js-development-services,2,149,498,1,0,4,27,20,0,32,139,283,0,79,50.4,0,
+usecases,4,69,170,1,0,17,3,3,1,47,143,214,0,201,11.4,0,
+custom-ecommerce-development,2,146,754,1,0,2,30,30,0,39,124,337,0,67,16,0,
+technologies,2,140,567,1,0,2,24,24,0,50,141,275,1,204,8.9,0,
+e-books,3,141,140,1,0,2,4,4,1,50,144,212,0,134,10.6,0,
+ui-ux-design-services,2,108,339,1,0,4,29,22,0,23,132,279,1,90,28.8,0,
+shopify-development-services,2,108,984,1,0,4,22,15,0,30,30,298,0,0,,0,
+sanity-development-services,2,111,649,1,0,4,22,15,0,29,29,290,0,809,23.7,0,
+ruby-on-rails-development-services,2,106,529,1,0,4,28,21,0,36,133,284,0,101,36,0,
+react-native-development-services,2,106,509,1,0,4,27,20,0,35,35,282,0,0,,0,
+react-js-development-services,2,113,487,1,0,4,28,21,0,31,150,283,0,0,,0,
+software-product-discovery,3,111,503,1,0,4,23,16,0,28,143,275,0,93,12.4,0,
+professional-node-js-development-services,2,133,490,1,0,4,28,21,0,30,30,284,0,0,,0,
+medusa-js-development-services,2,111,483,1,0,4,27,20,0,32,134,281,1,842,25.9,0,
+hydrogen-development-services,2,121,639,1,0,4,21,14,0,31,31,278,0,531,33,0,
+d2c-ecommerce-development-services,2,110,582,1,0,4,29,22,0,36,138,297,0,1172,24,0,
+cms-development-services,2,65,467,1,0,4,27,20,0,26,143,284,1,59,24.7,0,
+b2c-ecommerce-development-services,2,110,581,1,0,4,29,22,0,36,130,297,0,569,22.1,12,1
+b2b-ecommerce-development-services,2,75,561,1,0,4,29,22,0,36,142,297,0,90,23.5,0,
+mvp-development,2,115,612,1,0,4,32,21,0,26,138,293,0,77,17,0,
+mobile-development,2,119,635,1,0,4,32,21,0,33,133,294,0,173,12.5,0,
+web-development,2,119,659,1,0,4,32,21,0,30,139,301,0,55,14.2,0,
+ai-consulting-services,2,72,363,1,0,3,17,10,0,33,130,248,0,127,13.8,0,
+generative-ai-development,2,69,481,1,0,3,16,9,0,36,134,262,0,67,15.7,0,
+data-analytics-services,2,114,425,1,0,3,21,14,0,34,135,261,0,79,16.9,0,
+machine-learning-model-engineering,3,107,395,1,0,3,23,16,0,45,129,258,0,116,26.7,0,
+computer-vision-development,2,113,410,1,0,3,18,11,0,38,128,258,0,69,23.3,0,
+how-we-work,3,74,493,1,0,1,31,20,1,48,134,266,1,89,12.7,15,18
+cerebro-ai-driven-crypto,3,113,521,1,0,2,16,16,0,37,121,255,0,231,5.2,16,79
+paint-manufacturing,3,110,509,1,0,2,13,13,0,30,133,248,0,58,15.4,0,
+woocommerce-development,2,105,206,1,0,2,7,0,0,34,154,223,0,0,,0,
+wordpress-development,2,66,204,1,0,2,7,0,0,32,154,223,0,0,,0,
+generative-ai-integration,3,73,544,1,0,3,16,9,0,36,131,283,0,184,21.8,0,
+careers,3,117,66,1,0,1,29,29,0,42,135,211,17,847,8.1,27,8
+ai-driven-software-development,2,111,555,1,0,0,0,0,0,44,145,270,0,0,,0,
+company,3,68,408,1,0,3,26,26,4,47,144,254,1,647,7.2,47,10
+contact,3,66,22,1,0,0,16,16,1,32,137,211,0,240,6.2,30,12
+payload-cms-development,2,110,275,1,0,2,7,0,0,34,139,229,4,481,22.2,0,
+eyeset-mobile-application,3,74,649,1,0,1,4,4,0,38,119,241,0,1318,6.2,0,
+delivery-framework,3,109,459,1,0,0,0,0,0,42,145,248,2,212,17.7,0,
+testimonials,6,110,344,1,0,3,18,5,0,46,139,305,0,0,,0,
+showcases,5,107,68,1,0,12,0,0,0,60,137,206,0,0,,0,
+case-studies,3,111,64,1,0,8,8,8,1,52,139,206,1,158,7.2,0,
+guides,3,65,261,1,0,4,8,8,1,64,140,236,0,549,11.4,0,
+manufacturing,3,103,510,1,0,2,24,24,0,45,144,263,0,134,8.1,0,
+elixir-phoenix-development,2,112,406,1,0,2,26,19,0,39,145,260,0,230,19.4,0,
+nest-js-development,2,105,207,1,0,2,7,0,0,30,138,225,0,0,,0,
+generative-ai-consulting,3,106,329,1,0,3,16,9,0,35,144,240,0,0,,0,
+ai-poc-development,2,107,460,1,0,3,17,10,0,29,131,255,0,0,,0,
+machine-learning-development-services,2,114,412,1,0,3,23,16,0,48,138,261,0,0,,0,
+ai-development-services,2,111,426,1,0,3,17,10,0,34,138,263,0,0,,0,
+ai-chatbot-development,2,118,441,1,0,3,17,10,0,33,138,264,0,0,,0,
+habbit-sg,3,110,321,1,0,1,0,0,0,34,13,229,0,66,8.5,0,
+wawasan-dengkil-order-management-platform,3,78,545,1,0,4,13,13,0,54,54,268,0,0,,0,
+videos,3,113,10,1,0,0,1,1,1,17,54,193,0,58,7.3,0,
+privacy,3,120,2387,1,0,3,0,0,1,25,154,216,1,123,6,14,9
+ai-agent-development,2,70,403,1,0,3,17,10,0,31,31,259,0,0,,0,
+ai-copilot-development,2,108,533,1,0,3,16,9,0,33,33,276,0,0,,0,
+next-js-development,2,108,425,1,0,2,21,14,0,30,30,250,0,0,,0,
+~showcase/ring-configurator,5,108,19,0,0,4,0,0,0,42,105,191,0,0,,0,
+~showcase/wordpress-%e2%86%92-payload-cms-migration,5,168,186,1,0,35,13,0,1,51,133,238,0,0,,0,
+~testimonial/paint-manufacturer,6,115,18,0,0,0,0,0,0,43,114,190,0,0,,0,
+~testimonial/wawasan-dengkil,6,111,15,0,0,0,0,0,0,40,131,190,0,0,,0,
+~testimonial/eyeset,6,110,19,0,0,0,0,0,0,31,133,190,0,0,,0,
+~testimonial/cerebro,6,118,21,0,0,0,0,0,0,32,136,190,0,0,,0,
+~testimonial/above,6,112,22,0,0,0,0,0,0,30,145,190,0,0,,0,
+usecase/ai-driven-crypto-investment-recommendations,4,118,5531,0,0,10,6,0,1,54,159,260,0,200,13.6,0,
+usecase/ai-for-manufacturing,4,119,5237,0,0,6,5,0,1,46,158,255,0,104,16.8,0,
+usecase/ai-solutions-for-retail-ecommerce,4,114,5497,0,0,6,6,0,1,45,156,256,0,151,14.3,0,
+~category/product-development,1,75,66,1,0,15,5,0,1,44,0,210,0,0,,0,
+~category/software,1,112,110,1,0,34,10,0,1,33,0,222,0,0,,0,
+~category/ui-ux,1,112,117,1,0,31,10,0,1,30,0,221,0,0,,0,
+~category/technologies,1,107,101,1,0,30,10,0,1,37,0,221,0,0,,0,
+~category/ecommerce,1,110,110,1,0,30,10,0,1,35,0,221,0,0,,0,
+~category/ai,1,116,42,1,0,12,4,0,1,27,0,207,0,0,,0,
+~industry/ecommerce,1,112,24,1,0,1,0,0,1,34,0,192,0,0,,0,
+~industry/fintech,1,112,23,1,0,1,0,0,1,32,0,192,0,0,,0,
+~industry/mobility,1,106,21,1,0,1,0,0,1,33,0,192,0,0,,0,
+~industry/operations,1,112,18,1,0,1,0,0,1,35,0,192,0,0,,0,
+~industry/manufacturing,1,169,186,1,0,35,13,0,1,51,133,238,0,0,,0,
+~service/headless-commerce,1,111,25,1,0,1,0,0,1,42,0,192,0,0,,0,
+~service/ai-ml,1,112,25,1,0,1,0,0,1,32,0,192,0,0,,0,
+~service/mobile-backend,1,111,23,1,0,1,0,0,1,41,0,192,0,0,,0,
+~service/web-mobile,1,110,20,1,0,1,0,0,1,37,0,192,0,0,,0,
+~service/mes-lite-platform,1,107,22,1,0,1,0,0,1,42,0,192,0,0,,0,
+~showcase-category/ecommerce,5,103,16,1,0,1,0,0,1,34,0,192,0,0,,0,
+~showcase-category/cms-migration,5,108,20,1,0,1,0,0,1,38,0,192,0,0,,0,
+utype/insight,3,112,183,1,0,6,3,3,1,32,0,195,0,0,,0,`;
 var GN = ["Trang chủ","Blog","Dịch vụ","Trang tĩnh","Use case","Showcase","Testimonial"];
 var D = RAW.split("\n").filter(function(l){return l.trim().length}).map(function(l){
   var a = l.split(",");
@@ -1319,8 +1450,8 @@ var D = RAW.split("\n").filter(function(l){return l.trim().length}).map(function
 });
 D.sort(function(a,b){return b.t-a.t});
 
-var SUBS=[["Crawlability &amp; Index",62,"#D98324"],["Hiệu năng / TTFB",95,"#1B9E5A"],["Structured Data / AEO",69,"#D98324"],
-["On-page / CTR",44,"#D64545"],["Nội dung &amp; ảnh",74,"#D98324"]];
+var SUBS=[["Crawlability &amp; Index",62,"#D98324"],["Hiệu năng / TTFB",95,"#1B9E5A"],["Structured Data / AEO",68,"#D98324"],
+["On-page / CTR",43,"#D64545"],["Nội dung &amp; ảnh",75,"#D98324"]];
 document.getElementById("subs").innerHTML = SUBS.map(function(s){
  return '<div class="barrow"><div class="n">'+s[0]+'</div><div class="track"><div class="fill" style="width:'+s[1]+'%;background:'+s[2]+'"></div></div><div class="s" style="color:'+s[2]+'">'+s[1]+'</div></div>';
 }).join("");
